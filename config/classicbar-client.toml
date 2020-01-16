@@ -13,7 +13,7 @@
 	saturation_bar_debuff_color = "#87BC00"
 	absorption_poison_color_values = ["#D4AF37", "#C2C73B", "#8DC337", "#36BA77", "#4A5BC4", "#D89AE2", "#DF9DC7", "#DFA99D", "#D4DF9D", "#3E84C6", "#B8C1E8", "#DFDFDF"]
 	show_saturation_bar = true
-	#Range: 0.0 ~ 1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
 	transition_speed = 0.3
 	right_order = ["blood", "healthmount", "food", "armortoughness", "thirst", "air", "flighttiara", "decay"]
 	flight_bar_color = "#FFFFFF"

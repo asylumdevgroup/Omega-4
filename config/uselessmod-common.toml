@@ -1,0 +1,88 @@
+
+[energy_cable]
+	#How much FE is stored in one Energy Cable
+	#Range: 100 ~ 10000
+	capacity = 1000
+
+[fluid_tank]
+	#How much mB can be stored in a fluid tank.
+	#Range: 1000 ~ 100000
+	capacity = 10000
+
+[oregen]
+	#Maximum number of ore veins of the Super Useless Ore in one chunk.
+	#Range: 1 ~ 100000
+	super_useless_ore_chance = 5
+	#Decide if you want Useless Mod ores to generate in the end
+	generate_end = true
+	#Decide if you want Useless Mod ores to generate in the nether
+	generate_nether = true
+	#Decide if you want Useless Mod ores to generate in the overworld
+	generate_overworld = true
+	#Maximum number of ore veins of the Useless Ore in one chunk.
+	#Range: 1 ~ 100000
+	useless_ore_chance = 15
+
+[biome]
+	#The weight of the Useless Biome (Plains = 10)
+	#Range: 1 ~ 1000
+	useless_biome_weight = 20
+	#Defines if the useless biome is enabled
+	useless_biome_enabled = true
+
+[machines]
+
+	[machines.coffee_machine]
+		#How much water per tick the coffee machine uses.
+		#Range: 1.0 ~ 1000.0
+		water_per_tick = 1.5
+		#Capacity of the water tank in the coffee machine
+		#Range: 1000 ~ 16000
+		water_tank_capacity = 2000
+		#How many coffee beans per coffee the coffee machine uses.
+		#Range: 1 ~ 64
+		beans_per_coffee = 2
+		#How much RF per tick the coffee machine uses.
+		#Range: 1 ~ 1000
+		rf_per_tick = 10
+
+	[machines.electric_furnace]
+		#How much RF per tick the electric furnace uses.
+		#Range: 1 ~ 1000
+		rf_per_tick = 15
+
+	[machines.lava_generator]
+		#Tank capacity of the lava generator.
+		#Range: 1000 ~ 10000
+		tank_capacity = 4000
+		#How many ticks between one mB.
+		#Range: 1 ~ 200
+		ticks_per_mb = 10
+		#How much RF is produced by lava generator
+		#Range: 1 ~ 10000
+		rf_per_tick = 120
+
+	[machines.magma_crucible]
+		#How many mB can be stored in a magma crucible.
+		#Range: 1000 ~ 10000
+		tank_capacity = 4000
+		#How much RF per tick the magma crucible uses.
+		#Range: 1 ~ 1000
+		rf_per_tick = 15
+
+	[machines.electric_crusher]
+		#How much RF per tick the electric crusher uses.
+		#Range: 1 ~ 1000
+		rf_per_tick = 15
+
+	[machines.compressor]
+		#How much RF per tick the compressor uses.
+		#Range: 1 ~ 1000
+		rf_per_tick = 15
+
+[entity]
+	#Decide if you want the Useless Entity to spawn in your world
+	useless_entity_enabled = true
+	#Decide if you want grenades enabled
+	grenade_enabled = true
+
