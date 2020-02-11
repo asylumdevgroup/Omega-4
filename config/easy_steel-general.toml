@@ -33,6 +33,23 @@
 	#Range: 0 ~ 255
 	wolframiteOreMaxHeight = 15
 
+#Rutile Ore Generation
+[rutile]
+	#Generate Rutile Ore in the world [true / false]
+	rutileOreGeneration = true
+	#Size of Rutile Ore pockets [0-100, default: 5]
+	#Range: 0 ~ 100
+	rutileOreSize = 4
+	#Minimal height for Rutile Ore pocket generation, [0-255, default: 1]
+	#Range: 0 ~ 255
+	rutileOreMinHeight = 1
+	#Maximal height for Rutile Ore pocket generation [0-255, default: 200]
+	#Range: 0 ~ 255
+	rutileOreMaxHeight = 15
+	#Chances of Rutile Ore pocket being generated [0-100, default: 6]
+	#Range: 0 ~ 100
+	rutileOreChance = 4
+
 #Bornite Ore Generation
 [bornite_ore]
 	#Generate Bornite Ore in the world [true / false]

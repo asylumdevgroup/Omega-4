@@ -5,8 +5,8 @@
 	logPackets = false
 	#Audible sparkles.
 	dynamicTankEasterEgg = false
-	#Allows vanilla spawners to be moved with a Cardboard Box.
-	cardboardSpawners = true
+	#Any mod ids added to this list will not be able to have any of their blocks, picked up by the cardboard box.
+	cardboardModBlacklist = []
 	#How many ticks must pass until a block's active state can sync with the client.
 	UPDATE_DELAY = 10
 	#Base factor for working out machine performance with upgrades - UpgradeModifier * (UpgradesInstalled/UpgradesPossible).
@@ -59,9 +59,6 @@
 	#Maximum radius in blocks that the Digital Miner can reach. (Increasing this may have negative effects on stability and/or performance. We strongly recommend you leave it at the default value.)
 	#Range: > 1
 	digitalMinerMaxRadius = 32
-	#Chance of producing sawdust per operation in the precision sawmill when turning logs into planks.
-	#Range: 0.0 ~ 1.0
-	sawdustChanceLog = 1.0
 	#Displayed energy type in Mekanism GUIs.
 	#Allowed Values: J, FE, EU
 	energyType = "FE"
@@ -98,6 +95,10 @@
 		energyUsage = 10
 		#Cost in Joules of using the Atomic Disassembler as a hoe.
 		energyUsageHoe = 10
+		#Cost in Joules of using the Atomic Disassembler as a shovel for making paths.
+		energyUsageShovel = 10
+		#Cost in Joules of using the Atomic Disassembler as an axe for stripping logs.
+		energyUsageAxe = 10
 		#Cost in Joules of using the Atomic Disassembler as a weapon.
 		energyUsageWeapon = 2000
 		#The Range of the Atomic Disassembler Extended Vein Mining.
