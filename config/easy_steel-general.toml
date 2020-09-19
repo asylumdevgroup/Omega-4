@@ -16,6 +16,24 @@
 	#Range: 0 ~ 100
 	cassiteriteOreSize = 9
 
+#Tool/Armor Material Modifiers
+[material_modifiers]
+	#Modifies material base damage by this amount [1.0-50.0, default: 1.0]
+	#Range: 0.0 ~ 50.0
+	attack_damage_modifier = 1.0
+	#Modifies material base durability by this amount [1-5, default: 1]
+	#Range: 0 ~ 5
+	durability_modifier = 1
+	#Modifies material base damage reduction used by armors by this amount [1-5, default: 1]
+	#Range: 0 ~ 5
+	damage_reduction_modifier = 1
+
+#Hand Sovel drop chances
+[hand_shovel]
+	#Chance of Hand Shovel dropping Sharp Flint [0-1, default: .30]
+	#Range: 0.0 ~ 1.0
+	sharp_flint_drop_chance = 0.3
+
 #Wolframite Ore Generation
 [wolframite_ore]
 	#Size of Wolframite Ore pockets [0-100, default: 5]

@@ -11,3 +11,7 @@
 	#Should items of this material have the enchanted glow.
 	hasEffect = false
 
+[mekanism]
+	#The base to use in Mekanism's Combiner to recreate ores.
+	ore_base = "#forge:cobblestone"
+

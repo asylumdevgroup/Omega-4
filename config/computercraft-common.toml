@@ -33,7 +33,7 @@ log_computer_errors = false
 #Controls the HTTP API
 [http]
 	#The maximum size (in bytes) that a computer can send or receive in one websocket packet.
-	#Range: 0 ~ 65536
+	#Range: 0 ~ 1073741824
 	max_websocket_message = 65536
 	#The number of http requests a computer can make at one time. Additional requests will be queued, and sent when the running requests have finished. Set to 0 for unlimited.
 	#Range: > 0
@@ -41,27 +41,46 @@ log_computer_errors = false
 	#The maximum size (in bytes) that a computer can upload in a single request. This includes headers and POST text.
 	#Range: > 0
 	max_upload = 4194304
-	#A list of wildcards for domains or IP ranges that cannot be accessed through the "http" API on Computers.
-	#If this is empty then all whitelisted domains will be accessible. Example: "*.github.com" will block access to all subdomains of github.com.
-	#You can use domain names ("pastebin.com"), wilcards ("*.pastebin.com") or CIDR notation ("127.0.0.0/8").
-	blacklist = ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "fd00::/8"]
-	#A list of wildcards for domains or IP ranges that can be accessed through the "http" API on Computers.
-	#Set this to "*" to access to the entire internet. Example: "*.pastebin.com" will restrict access to just subdomains of pastebin.com.
-	#You can use domain names ("pastebin.com"), wilcards ("*.pastebin.com") or CIDR notation ("127.0.0.0/8").
-	whitelist = ["*"]
 	#The maximum size (in bytes) that a computer can download in a single request. Note that responses may receive more data than allowed, but this data will not be returned to the client.
 	#Range: > 0
 	max_download = 16777216
 	#The number of websockets a computer can have open at one time. Set to 0 for unlimited.
 	#Range: > 1
 	max_websockets = 4
-	#Enable the "http" API on Computers (see "http_whitelist" and "http_blacklist" for more fine grained control than this)
+	#Enable the "http" API on Computers (see "rules" for more fine grained control than this).
 	enabled = true
 	#Enable use of http websockets. This requires the "http_enable" option to also be true.
 	websocket_enabled = true
 	#The period of time (in milliseconds) to wait before a HTTP request times out. Set to 0 for unlimited.
 	#Range: > 0
 	timeout = 30000
+
+	#A list of rules which control which domains or IPs are allowed through the "http" API on computers.
+	#Each rule is an item with a 'host' to match against, and an action. The host may be a domain name ("pastebin.com"),
+	#wildcard ("*.pastebin.com") or CIDR notation ("127.0.0.0/8"). 'action' maybe 'allow' or 'block'. If no rulesmatch, the domain will be blocked.
+	[[http.rules]]
+		host = "127.0.0.0/8"
+		action = "deny"
+
+	[[http.rules]]
+		host = "10.0.0.0/8"
+		action = "deny"
+
+	[[http.rules]]
+		host = "172.16.0.0/12"
+		action = "deny"
+
+	[[http.rules]]
+		host = "192.168.0.0/16"
+		action = "deny"
+
+	[[http.rules]]
+		host = "fd00::/8"
+		action = "deny"
+
+	[[http.rules]]
+		host = "*"
+		action = "allow"
 
 #Various options relating to peripherals.
 [peripheral]
