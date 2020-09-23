@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-02-11T01:43:04.5254137Z",
+  "lastPlayed": "2020-09-23T19:01:45.063492Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -3406,90 +3406,72 @@
       "addonID": 281849,
       "gameInstanceID": "2dd7d3e1-c54b-47be-878e-a7341004073f",
       "installedFile": {
-        "id": 3048778,
-        "displayName": "pneumaticcraft-repressurized-1.15.2-1.4.5-69.jar",
-        "fileName": "pneumaticcraft-repressurized-1.15.2-1.4.5-69.jar",
-        "fileDate": "2020-09-03T08:57:12.24Z",
-        "fileLength": 6270790,
+        "id": 3062486,
+        "displayName": "pneumaticcraft-repressurized-1.15.2-1.5.0-73.jar",
+        "fileName": "pneumaticcraft-repressurized-1.15.2-1.5.0-73.jar",
+        "fileDate": "2020-09-22T07:34:48.923Z",
+        "fileLength": 6277174,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3048/778/pneumaticcraft-repressurized-1.15.2-1.4.5-69.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3062/486/pneumaticcraft-repressurized-1.15.2-1.5.0-73.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 47596361,
+            "id": 0,
             "addonId": 306770,
             "type": 2,
-            "fileId": 3048778
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2348301645,
-            "type": 3
+            "fingerprint": 3840284510,
+            "type": 0
           },
           {
             "foldername": "me",
-            "fingerprint": 401368558,
-            "type": 3
+            "fingerprint": 4049886022,
+            "type": 0
           },
           {
             "foldername": "data",
             "fingerprint": 994105606,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 544151120,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 1712298430,
-            "type": 3
+            "fingerprint": 230103567,
+            "type": 0
           }
         ],
-        "packageFingerprint": 3439530483,
+        "packageFingerprint": 1512109767,
         "gameVersion": [
           "Forge",
           "1.15.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000015.0000000002",
-            "gameVersion": "1.15.2",
-            "gameVersionReleaseDate": "2020-01-22T00:00:00Z",
-            "gameVersionName": "1.15.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1977513,
-        "projectId": 281849,
-        "packageFingerprintId": 515810250,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameVersionMappingId": 2410658,
-        "gameVersionId": 7498,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "pneumaticcraft-repressurized-1.15.2-1.4.5-69.jar"
+        "FileNameOnDisk": "pneumaticcraft-repressurized-1.15.2-1.5.0-73.jar"
       },
       "dateInstalled": "2020-09-19T20:55:17.1338231Z",
-      "dateUpdated": "2019-09-19T20:55:17.1338231Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2020-09-23T19:01:03.4557616Z",
+      "dateLastUpdateAttempted": "2020-09-23T19:01:03.4557616Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
