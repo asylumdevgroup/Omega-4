@@ -1,0 +1,29 @@
+{
+	id: 2,
+	filename: "build_better_bases",
+	order_index: 1,
+	title: "Build Better Bases",
+	icon: "minecraft:bricks",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: [{
+		x: -4.0d,
+		y: -1.5d,
+		shape: "gear",
+		subtitle: "",
+		size: 2.0d,
+		description: ["This chapter focuses on several build-related mods, including Prefab, Building Gadgets, and more!"],
+		min_required_dependencies: 0,
+		dependencies: [I;],
+		dependency_requirement: "all_completed",
+		id: 6,
+		tasks: [{
+			id: 7,
+			type: "checkmark",
+			title: "Build Better Bases - Unlock Chapter",
+			icon: "prefab:item_start_house"
+		}]
+	}]
+}

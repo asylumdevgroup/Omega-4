@@ -1,0 +1,31 @@
+{
+	id: 3,
+	filename: "welcome",
+	order_index: 1,
+	title: "Welcome",
+	icon: "minecraft:grass_block",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: [{
+		title: "Welcome to ADG Omega 4!",
+		x: -5.5d,
+		y: -3.5d,
+		shape: "gear",
+		subtitle: "",
+		size: 2.0d,
+		description: [
+			"Welcome to ADG Omega 4, the flagship ADG Kitchen Sink pack for 1.15.2!",
+			"This pack contains many familiar mods from previous Minecraft versions, but also several newcomers to the modding scene!"
+		],
+		min_required_dependencies: 0,
+		dependencies: [I;],
+		dependency_requirement: "all_completed",
+		id: 4,
+		tasks: [{
+			id: 5,
+			type: "checkmark"
+		}]
+	}]
+}

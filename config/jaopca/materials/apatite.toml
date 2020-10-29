@@ -11,3 +11,7 @@
 	#Should items of this material have the enchanted glow.
 	hasEffect = false
 
+[crossroads]
+	#The byproduct material to output in Crossroads' Millstone.
+	byproduct = "minecraft:sand"
+
