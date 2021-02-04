@@ -25,3 +25,7 @@
 	#The byproduct material to output in Crossroads' Millstone.
 	byproduct = "minecraft:sand"
 
+[indreb]
+	#The byproduct material to output in Industrial Reborn's crushing.
+	byproduct = "minecraft:cobblestone"
+
