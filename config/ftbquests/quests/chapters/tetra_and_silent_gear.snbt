@@ -1,0 +1,29 @@
+{
+	id: 45,
+	filename: "tetra_and_silent_gear",
+	order_index: 4,
+	title: "Tetra and Silent Gear",
+	icon: "tetra:basic_workbench",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: [{
+		x: 0.0d,
+		y: 0.0d,
+		shape: "gear",
+		subtitle: "",
+		size: 2.0d,
+		description: ["Coming Soon!!!"],
+		min_required_dependencies: 0,
+		dependencies: [I;],
+		dependency_requirement: "all_completed",
+		id: 187,
+		tasks: [{
+			id: 188,
+			type: "checkmark",
+			title: "Tetra and Silent Gear - Unlock Chapter",
+			icon: "tetra:basic_workbench"
+		}]
+	}]
+}

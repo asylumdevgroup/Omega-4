@@ -1,29 +1,425 @@
 {
 	id: 2,
 	filename: "build_better_bases",
-	order_index: 1,
+	order_index: 2,
 	title: "Build Better Bases",
 	icon: "minecraft:bricks",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "default",
 	images: [],
-	quests: [{
-		x: -4.0d,
-		y: -1.5d,
-		shape: "gear",
-		subtitle: "",
-		size: 2.0d,
-		description: ["This chapter focuses on several build-related mods, including Prefab, Building Gadgets, and more!"],
-		min_required_dependencies: 0,
-		dependencies: [I;],
-		dependency_requirement: "all_completed",
-		id: 6,
-		tasks: [{
-			id: 7,
-			type: "checkmark",
-			title: "Build Better Bases - Unlock Chapter",
-			icon: "prefab:item_start_house"
-		}]
-	}]
+	quests: [
+		{
+			x: -4.0d,
+			y: -1.5d,
+			shape: "gear",
+			subtitle: "",
+			size: 2.0d,
+			description: ["This chapter focuses on several build-related mods, including Prefab, Building Gadgets, and more!"],
+			min_required_dependencies: 0,
+			dependencies: [I;],
+			dependency_requirement: "all_completed",
+			id: 6,
+			tasks: [{
+				id: 7,
+				type: "checkmark",
+				title: "Build Better Bases - Unlock Chapter",
+				icon: "prefab:item_start_house"
+			}]
+		},
+		{
+			title: "First Major House",
+			icon: "prefab:item_moderate_house",
+			x: -2.5d,
+			y: -1.5d,
+			shape: "rsquare",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;6],
+			dependency_requirement: "all_completed",
+			id: 97,
+			tasks: [{
+				id: 98,
+				type: "item",
+				item: "prefab:item_moderate_house"
+			}]
+		},
+		{
+			title: "Functional",
+			icon: "prefab:item_warehouse",
+			x: -1.5d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;97],
+			dependency_requirement: "all_completed",
+			id: 99,
+			tasks: [
+				{
+					id: 100,
+					type: "item",
+					item: "prefab:item_warehouse"
+				},
+				{
+					id: 110,
+					type: "item",
+					item: "prefab:item_produce_farm"
+				},
+				{
+					id: 111,
+					type: "item",
+					item: "prefab:item_tree_farm"
+				},
+				{
+					id: 112,
+					type: "item",
+					item: "prefab:item_monster_masher"
+				},
+				{
+					id: 113,
+					type: "item",
+					item: "prefab:item_machinery_tower"
+				},
+				{
+					id: 114,
+					type: "item",
+					item: "prefab:item_mineshaft_entrance"
+				}
+			]
+		},
+		{
+			title: "Dimensional Gates",
+			icon: "prefab:item_nether_gate",
+			x: -1.5d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;97],
+			dependency_requirement: "all_completed",
+			id: 101,
+			tasks: [
+				{
+					id: 102,
+					type: "item",
+					item: "prefab:item_nether_gate"
+				},
+				{
+					id: 103,
+					type: "item",
+					item: "prefab:item_ender_gateway"
+				}
+			]
+		},
+		{
+			title: "Decorative",
+			icon: "prefab:item_grassy_plain",
+			x: -1.5d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;97],
+			dependency_requirement: "all_completed",
+			id: 104,
+			tasks: [
+				{
+					id: 105,
+					type: "item",
+					item: "prefab:item_fish_pond"
+				},
+				{
+					id: 106,
+					type: "item",
+					item: {
+						id: "prefab:item_villager_houses",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 107,
+					type: "item",
+					item: "prefab:item_grassy_plain"
+				},
+				{
+					id: 108,
+					type: "item",
+					item: "prefab:item_jail"
+				},
+				{
+					id: 109,
+					type: "item",
+					item: "prefab:item_saloon"
+				}
+			]
+		},
+		{
+			title: "Advanced Functional",
+			icon: "prefab:item_advanced_warehouse",
+			x: -0.5d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;99],
+			dependency_requirement: "all_completed",
+			id: 115,
+			tasks: [{
+				id: 116,
+				type: "item",
+				item: "prefab:item_warehouse_upgrade"
+			}]
+		},
+		{
+			title: "Other Bases",
+			icon: "prefab:item_aqua_base",
+			x: -0.5d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;97],
+			dependency_requirement: "all_completed",
+			id: 117,
+			tasks: [
+				{
+					id: 118,
+					type: "item",
+					item: "prefab:item_aqua_base"
+				},
+				{
+					id: 119,
+					type: "item",
+					item: "prefab:item_defense_bunker"
+				}
+			]
+		},
+		{
+			x: -5.5d,
+			y: -1.5d,
+			shape: "rsquare",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;6],
+			dependency_requirement: "all_completed",
+			id: 120,
+			tasks: [{
+				id: 121,
+				type: "item",
+				item: {
+					id: "buildinggadgets:gadget_building",
+					Count: 1b,
+					tag: {
+						Damage: 0,
+						state_actual: {
+							serializer: "buildinggadgets:dummy_serializer",
+							state: {
+								Name: "minecraft:air"
+							},
+							data: {}
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: -6.5d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;120],
+			dependency_requirement: "all_completed",
+			id: 122,
+			tasks: [{
+				id: 123,
+				type: "item",
+				item: {
+					id: "buildinggadgets:gadget_exchanging",
+					Count: 1b,
+					tag: {
+						Damage: 0,
+						state_actual: {
+							serializer: "buildinggadgets:dummy_serializer",
+							state: {
+								Name: "minecraft:air"
+							},
+							data: {}
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: -6.5d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;120],
+			dependency_requirement: "all_completed",
+			id: 124,
+			tasks: [{
+				id: 125,
+				type: "item",
+				item: {
+					id: "buildinggadgets:gadget_destruction",
+					Count: 1b,
+					tag: {
+						overlay: 1b,
+						Damage: 0,
+						fuzzy: 1b
+					}
+				}
+			}]
+		},
+		{
+			x: -6.5d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;120],
+			dependency_requirement: "all_completed",
+			id: 126,
+			tasks: [{
+				id: 127,
+				type: "item",
+				item: {
+					id: "buildinggadgets:gadget_copy_paste",
+					Count: 1b,
+					tag: {
+						mode: 0b,
+						template_idMost: 3580497933505022157L,
+						Damage: 0,
+						template_idLeast: -7320102053179435336L
+					}
+				}
+			}]
+		},
+		{
+			title: "Platform Maker",
+			icon: "platforms:platformer",
+			x: -5.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;6],
+			dependency_requirement: "all_completed",
+			id: 128,
+			tasks: [{
+				id: 129,
+				type: "item",
+				item: "platforms:platformer"
+			}]
+		},
+		{
+			title: "Better than Ladders",
+			icon: "elevatorid:elevator_white",
+			x: -3.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;6],
+			dependency_requirement: "all_completed",
+			id: 130,
+			tasks: [{
+				id: 131,
+				type: "item",
+				item: "elevatorid:elevator_white"
+			}]
+		},
+		{
+			title: "Advanced Lighting",
+			icon: "torchmaster:megatorch",
+			x: -3.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;6],
+			dependency_requirement: "all_completed",
+			id: 132,
+			tasks: [
+				{
+					id: 133,
+					type: "item",
+					item: "torchmaster:feral_flare_lantern"
+				},
+				{
+					id: 134,
+					type: "item",
+					item: "torchmaster:megatorch"
+				}
+			]
+		},
+		{
+			title: "Random Decoration",
+			icon: "decorative_blocks:rocky_dirt",
+			x: -5.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;6],
+			dependency_requirement: "all_completed",
+			id: 135,
+			tasks: [
+				{
+					id: 136,
+					type: "item",
+					item: "decorative_blocks:rocky_dirt"
+				},
+				{
+					id: 137,
+					type: "item",
+					item: "decorative_blocks:chandelier"
+				},
+				{
+					id: 138,
+					type: "item",
+					item: "decorative_blocks:bar_panel"
+				},
+				{
+					id: 139,
+					type: "item",
+					item: "decorative_blocks:stone_pillar"
+				}
+			]
+		}
+	]
 }

@@ -37,3 +37,7 @@ BotaniaVars.dat
 patchouli_data.json
 
 crash-reports/
+
+local/
+
+backups/

@@ -1,0 +1,1293 @@
+{
+	id: 46,
+	filename: "gobber_and_powder_power",
+	order_index: 5,
+	title: "Gobber and Powder Power",
+	icon: "gobber2:gobber2_ingot",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			shape: "gear",
+			subtitle: "",
+			size: 2.0d,
+			description: ["This chapter focuses on the mods Gobber and Powder Power, both of which add powerful tools, weapons, and other gadgets."],
+			min_required_dependencies: 0,
+			dependencies: [I;],
+			dependency_requirement: "all_completed",
+			id: 189,
+			tasks: [{
+				id: 190,
+				type: "checkmark",
+				title: "Gobber and Powder Power - Unlock Chapter",
+				icon: "gobber2:gobber2_ingot"
+			}]
+		},
+		{
+			title: "Overworld Gobber",
+			icon: "gobber2:gobber2_ore",
+			x: -1.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;189],
+			dependency_requirement: "all_completed",
+			id: 199,
+			tasks: [
+				{
+					id: 200,
+					type: "item",
+					item: "gobber2:gobber2_glob"
+				},
+				{
+					id: 203,
+					type: "item",
+					item: "gobber2:gobber2_ingot"
+				},
+				{
+					id: 204,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_pickaxe",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Nether Gobber",
+			icon: "gobber2:gobber2_ore_nether",
+			x: -2.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;199],
+			dependency_requirement: "all_completed",
+			id: 205,
+			tasks: [
+				{
+					id: 206,
+					type: "item",
+					item: "gobber2:gobber2_glob_nether"
+				},
+				{
+					id: 207,
+					type: "item",
+					item: "gobber2:gobber2_ingot_nether"
+				},
+				{
+					id: 208,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_pickaxe_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "End Gobber",
+			icon: "gobber2:gobber2_ore_end",
+			x: -3.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;205],
+			dependency_requirement: "all_completed",
+			id: 209,
+			tasks: [
+				{
+					id: 210,
+					type: "item",
+					item: "gobber2:gobber2_glob_end"
+				},
+				{
+					id: 211,
+					type: "item",
+					item: "gobber2:gobber2_ingot_end"
+				},
+				{
+					id: 212,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_pickaxe_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Gobber Tools",
+			icon: {
+				id: "gobber2:gobber2_sword",
+				Count: 1b,
+				tag: {
+					AS_Amulet_HolderLeast: -7853435248343776495L,
+					Damage: 0,
+					AS_Amulet_HolderMost: -55474381506852051L
+				}
+			},
+			x: -1.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;199],
+			dependency_requirement: "all_completed",
+			id: 213,
+			tasks: [
+				{
+					id: 214,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_sword",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 215,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_axe",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 216,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_shovel",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 217,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_bow",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Advanced Gobber Tools",
+			icon: {
+				id: "gobber2:gobber2_hammer",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -1.5d,
+			y: -2.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;199],
+			dependency_requirement: "all_completed",
+			id: 218,
+			tasks: [
+				{
+					id: 219,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_hammer",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 220,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_excavator",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 221,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_tree_axe",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 222,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_paxel",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Gobber Armor",
+			icon: {
+				id: "gobber2:gobber2_chestplate",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -1.5d,
+			y: 1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;199],
+			dependency_requirement: "all_completed",
+			id: 223,
+			tasks: [
+				{
+					id: 224,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_helmet",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 225,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_chestplate",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 226,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_leggings",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 227,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_boots",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Nether Tools",
+			icon: {
+				id: "gobber2:gobber2_sword_nether",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -2.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;205],
+			dependency_requirement: "all_completed",
+			id: 228,
+			tasks: [
+				{
+					id: 229,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_sword_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 230,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_axe_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 231,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_shovel_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 232,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_bow_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Advanced Nether Tools",
+			icon: {
+				id: "gobber2:gobber2_hammer_nether",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -2.5d,
+			y: -2.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;205],
+			dependency_requirement: "all_completed",
+			id: 233,
+			tasks: [
+				{
+					id: 234,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_hammer_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 235,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_excavator_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 236,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_tree_axe_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 237,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_paxel_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Nether Armor",
+			icon: {
+				id: "gobber2:gobber2_chestplate_nether",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -2.5d,
+			y: 1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;205],
+			dependency_requirement: "all_completed",
+			id: 238,
+			tasks: [
+				{
+					id: 239,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_helmet_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 240,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_chestplate_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 241,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_leggings_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 242,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_boots_nether",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "End Tools",
+			icon: {
+				id: "gobber2:gobber2_sword_end",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -3.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;209],
+			dependency_requirement: "all_completed",
+			id: 243,
+			tasks: [
+				{
+					id: 244,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_sword_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 245,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_axe_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 246,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_shovel_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 247,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_bow_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Advanced End Tools",
+			icon: {
+				id: "gobber2:gobber2_hammer_end",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -3.5d,
+			y: -2.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;209],
+			dependency_requirement: "all_completed",
+			id: 248,
+			tasks: [
+				{
+					id: 249,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_hammer_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 250,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_excavator_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 251,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_tree_axe_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 252,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_paxel_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "End Armor",
+			icon: {
+				id: "gobber2:gobber2_chestplate_end",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -3.5d,
+			y: 1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;209],
+			dependency_requirement: "all_completed",
+			id: 253,
+			tasks: [
+				{
+					id: 254,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_helmet_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 255,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_chestplate_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 256,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_leggings_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 257,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_boots_end",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Advanced End Weaponry",
+			icon: {
+				id: "gobber2:gobber2_sword_sniper",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -4.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				243,
+				248
+			],
+			dependency_requirement: "all_completed",
+			id: 258,
+			tasks: [
+				{
+					id: 259,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_sword_sniper",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 260,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_sword_traveler",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 261,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_paxel_stars",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Creative Flight Armor",
+			icon: {
+				id: "gobber2:gobber2_chestplate_dragon",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -4.5d,
+			y: 1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;253],
+			dependency_requirement: "all_completed",
+			id: 262,
+			tasks: [
+				{
+					id: 263,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_helmet_dragon",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 264,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_chestplate_dragon",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 265,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_leggings_dragon",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 266,
+					type: "item",
+					item: {
+						id: "gobber2:gobber2_boots_dragon",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -1.5d,
+			y: 2.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;199],
+			dependency_requirement: "all_completed",
+			id: 267,
+			tasks: [{
+				id: 268,
+				type: "item",
+				item: "gobber2:gobber2_ring"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 2.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;205],
+			dependency_requirement: "all_completed",
+			id: 269,
+			tasks: [{
+				id: 270,
+				type: "item",
+				item: "gobber2:gobber2_ring_nether"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 2.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;209],
+			dependency_requirement: "all_completed",
+			id: 271,
+			tasks: [{
+				id: 272,
+				type: "item",
+				item: "gobber2:gobber2_ring_end"
+			}]
+		},
+		{
+			title: "Powder Power",
+			icon: {
+				id: "powder_power:hammer_alchemist",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 1.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;189],
+			dependency_requirement: "all_completed",
+			id: 273,
+			tasks: [
+				{
+					id: 274,
+					type: "item",
+					item: {
+						id: "powder_power:motar_pestle",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 275,
+					type: "item",
+					item: {
+						id: "powder_power:hammer_alchemist",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Tier 1 Powders",
+			icon: "powder_power:blend_gemium",
+			x: 2.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;273],
+			dependency_requirement: "all_completed",
+			id: 276,
+			tasks: [
+				{
+					id: 277,
+					type: "item",
+					item: "powder_power:blend_redium"
+				},
+				{
+					id: 278,
+					type: "item",
+					item: "powder_power:blend_lapium"
+				},
+				{
+					id: 279,
+					type: "item",
+					item: "powder_power:blend_gemium"
+				}
+			]
+		},
+		{
+			title: "Tier 2 Powder",
+			icon: "powder_power:blend_trilium",
+			x: 3.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;276],
+			dependency_requirement: "all_completed",
+			id: 280,
+			tasks: [{
+				id: 281,
+				type: "item",
+				item: "powder_power:blend_trilium"
+			}]
+		},
+		{
+			title: "Gemium Armor",
+			icon: {
+				id: "powder_power:armor_gemium_body",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 2.5d,
+			y: 1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;276],
+			dependency_requirement: "all_completed",
+			id: 282,
+			tasks: [
+				{
+					id: 283,
+					type: "item",
+					item: {
+						id: "powder_power:armor_gemium_head",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 284,
+					type: "item",
+					item: {
+						id: "powder_power:armor_gemium_body",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 285,
+					type: "item",
+					item: {
+						id: "powder_power:armor_gemium_leggings",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 286,
+					type: "item",
+					item: {
+						id: "powder_power:armor_gemium_boots",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Gemium Tools",
+			icon: {
+				id: "powder_power:sword_gemium",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 2.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;276],
+			dependency_requirement: "all_completed",
+			id: 287,
+			tasks: [
+				{
+					id: 288,
+					type: "item",
+					item: {
+						id: "powder_power:sword_gemium",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 289,
+					type: "item",
+					item: {
+						id: "powder_power:pickaxe_gemium",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 290,
+					type: "item",
+					item: {
+						id: "powder_power:axe_gemium",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 291,
+					type: "item",
+					item: {
+						id: "powder_power:shovel_gemium",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 292,
+					type: "item",
+					item: {
+						id: "powder_power:bow_gemium",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Trilium Armor",
+			icon: {
+				id: "powder_power:armor_trilium_body",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 3.5d,
+			y: 1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;280],
+			dependency_requirement: "all_completed",
+			id: 293,
+			tasks: [
+				{
+					id: 294,
+					type: "item",
+					item: {
+						id: "powder_power:armor_trilium_head",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 295,
+					type: "item",
+					item: {
+						id: "powder_power:armor_trilium_body",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 296,
+					type: "item",
+					item: {
+						id: "powder_power:armor_trilium_leggings",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 297,
+					type: "item",
+					item: {
+						id: "powder_power:armor_trilium_boots",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Trilium Tools",
+			icon: {
+				id: "powder_power:sword_trilium",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 3.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;280],
+			dependency_requirement: "all_completed",
+			id: 298,
+			tasks: [
+				{
+					id: 299,
+					type: "item",
+					item: {
+						id: "powder_power:sword_trilium",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 300,
+					type: "item",
+					item: {
+						id: "powder_power:pickaxe_trilium",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 301,
+					type: "item",
+					item: {
+						id: "powder_power:axe_trilium",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 302,
+					type: "item",
+					item: {
+						id: "powder_power:shovel_trilium",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 303,
+					type: "item",
+					item: {
+						id: "powder_power:bow_trilium",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
+}

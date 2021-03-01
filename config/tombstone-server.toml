@@ -47,7 +47,7 @@
 	#The cooldown in minutes to reset the perks with the ankh of Pray [0..60|default:20]
 	#Range: 0 ~ 60
 	cooldown_reset_perk = 20
-	#The cooldown in hours to pray with the Ânkh [1..10|default:3]
+	#The cooldown in hours to pray with the Ã‚nkh [1..10|default:3]
 	#Range: 1 ~ 10
 	cooldown_to_pray = 3
 	#Sets the decorative graves unbreakable [false/true|default:false]

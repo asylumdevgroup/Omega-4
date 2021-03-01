@@ -8,24 +8,765 @@
 	group: 0,
 	default_quest_shape: "default",
 	images: [],
-	quests: [{
-		title: "Welcome to ADG Omega 4!",
-		x: -5.5d,
-		y: -3.5d,
-		shape: "gear",
-		subtitle: "",
-		size: 2.0d,
-		description: [
-			"Welcome to ADG Omega 4, the flagship ADG Kitchen Sink pack for 1.15.2!",
-			"This pack contains many familiar mods from previous Minecraft versions, but also several newcomers to the modding scene!"
-		],
-		min_required_dependencies: 0,
-		dependencies: [I;],
-		dependency_requirement: "all_completed",
-		id: 4,
-		tasks: [{
-			id: 5,
-			type: "checkmark"
-		}]
-	}]
+	quests: [
+		{
+			title: "Welcome to ADG Omega 4!",
+			icon: "minecraft:grass_block",
+			x: -5.5d,
+			y: -3.5d,
+			shape: "gear",
+			subtitle: "",
+			size: 2.0d,
+			description: [
+				"Welcome to ADG Omega 4, the flagship ADG Kitchen Sink pack for 1.15.2!",
+				"This pack contains many familiar mods from previous Minecraft versions, but also several newcomers to the modding scene!",
+				"The Intro Questline will cover features added to Vanilla Minecraft after 1.12.2, including 1.13, 1.14, and 1.15."
+			],
+			min_required_dependencies: 0,
+			dependencies: [I;],
+			dependency_requirement: "all_completed",
+			id: 4,
+			tasks: [{
+				id: 5,
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: 11,
+					type: "item",
+					item: {
+						id: "minecraft:apple",
+						Count: 8b
+					}
+				},
+				{
+					id: 12,
+					type: "item",
+					item: {
+						id: "minecraft:torch",
+						Count: 16b
+					}
+				}
+			]
+		},
+		{
+			title: "Update Aquatic",
+			x: -5.5d,
+			y: -5.0d,
+			shape: "rsquare",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;4],
+			dependency_requirement: "all_completed",
+			id: 13,
+			tasks: [{
+				id: 14,
+				type: "checkmark",
+				title: "Update Aquatic Features",
+				icon: "minecraft:water_bucket"
+			}],
+			rewards: [
+				{
+					id: 140,
+					type: "item",
+					item: "minecraft:water_bucket"
+				},
+				{
+					id: 141,
+					type: "item",
+					item: {
+						id: "minecraft:cod",
+						Count: 8b
+					}
+				}
+			]
+		},
+		{
+			title: "Village and Pillage",
+			x: -4.0d,
+			y: -3.5d,
+			shape: "rsquare",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;4],
+			dependency_requirement: "all_completed",
+			id: 17,
+			tasks: [{
+				id: 18,
+				type: "checkmark",
+				title: "Village and Pillage",
+				icon: "minecraft:emerald"
+			}],
+			rewards: [{
+				id: 81,
+				type: "item",
+				item: {
+					id: "minecraft:emerald",
+					Count: 4b
+				}
+			}]
+		},
+		{
+			title: "Buzzy Bees",
+			x: -5.5d,
+			y: -2.0d,
+			shape: "rsquare",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;4],
+			dependency_requirement: "all_completed",
+			id: 21,
+			tasks: [{
+				id: 22,
+				type: "checkmark",
+				title: "Buzzy Bees",
+				icon: "minecraft:honeycomb"
+			}],
+			rewards: [{
+				id: 91,
+				type: "item",
+				item: {
+					id: "minecraft:honeycomb",
+					Count: 4b
+				}
+			}]
+		},
+		{
+			title: "Specialized Furnaces",
+			icon: "minecraft:blast_furnace",
+			x: -3.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;17],
+			dependency_requirement: "all_completed",
+			id: 23,
+			tasks: [
+				{
+					id: 24,
+					type: "item",
+					item: "minecraft:smoker"
+				},
+				{
+					id: 25,
+					type: "item",
+					item: "minecraft:blast_furnace"
+				}
+			],
+			rewards: [{
+				id: 82,
+				type: "item",
+				item: {
+					id: "minecraft:iron_ore",
+					Count: 16b
+				}
+			}]
+		},
+		{
+			title: "Insomnia Monsters",
+			icon: "minecraft:phantom_membrane",
+			x: -6.5d,
+			y: -6.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;13],
+			dependency_requirement: "all_completed",
+			id: 26,
+			tasks: [
+				{
+					id: 27,
+					type: "kill",
+					title: "Kill 1 Phantom",
+					icon: "minecraft:phantom_spawn_egg",
+					entity: "minecraft:phantom",
+					value: 1L
+				},
+				{
+					id: 28,
+					type: "item",
+					item: "minecraft:phantom_membrane",
+					count: 4L
+				}
+			],
+			rewards: [{
+				id: 79,
+				type: "item",
+				item: {
+					id: "minecraft:phantom_membrane",
+					Count: 2b
+				}
+			}]
+		},
+		{
+			title: "Creatures of the Deep",
+			icon: "minecraft:drowned_spawn_egg",
+			x: -5.5d,
+			y: -6.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;13],
+			dependency_requirement: "all_completed",
+			id: 29,
+			tasks: [
+				{
+					id: 30,
+					type: "kill",
+					entity: "minecraft:drowned",
+					value: 5L
+				},
+				{
+					id: 32,
+					type: "item",
+					item: "minecraft:rotten_flesh",
+					count: 8L
+				}
+			],
+			rewards: [{
+				id: 80,
+				type: "item",
+				item: {
+					id: "minecraft:trident",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Vegan Seafood",
+			icon: "minecraft:kelp",
+			x: -4.5d,
+			y: -6.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;13],
+			dependency_requirement: "all_completed",
+			id: 33,
+			tasks: [
+				{
+					id: 34,
+					type: "item",
+					item: "minecraft:kelp",
+					count: 8L
+				},
+				{
+					id: 35,
+					type: "item",
+					item: "minecraft:dried_kelp",
+					count: 4L
+				}
+			],
+			rewards: [{
+				id: 36,
+				type: "item",
+				item: {
+					id: "minecraft:dried_kelp_block",
+					Count: 2b
+				}
+			}]
+		},
+		{
+			title: "Turtle Helmet",
+			icon: {
+				id: "minecraft:turtle_helmet",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -6.5d,
+			y: -5.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;13],
+			dependency_requirement: "all_completed",
+			id: 37,
+			tasks: [
+				{
+					id: 38,
+					type: "item",
+					item: "minecraft:scute"
+				},
+				{
+					id: 39,
+					type: "item",
+					item: {
+						id: "minecraft:turtle_helmet",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			],
+			rewards: [
+				{
+					id: 40,
+					type: "item",
+					item: {
+						id: "minecraft:scute",
+						Count: 4b
+					}
+				},
+				{
+					id: 41,
+					type: "item",
+					item: {
+						id: "minecraft:kelp",
+						Count: 8b
+					}
+				}
+			]
+		},
+		{
+			title: "Water Power",
+			icon: "minecraft:conduit",
+			x: -4.5d,
+			y: -5.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;13],
+			dependency_requirement: "all_completed",
+			id: 42,
+			tasks: [{
+				id: 43,
+				type: "item",
+				item: "minecraft:conduit"
+			}],
+			rewards: [{
+				id: 44,
+				type: "item",
+				item: "minecraft:nautilus_shell"
+			}]
+		},
+		{
+			title: 'The "Pillage" in "Village"',
+			icon: "minecraft:pillager_spawn_egg",
+			x: -3.0d,
+			y: -4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;17],
+			dependency_requirement: "all_completed",
+			id: 47,
+			tasks: [{
+				id: 48,
+				type: "kill",
+				entity: "minecraft:pillager",
+				value: 5L
+			}],
+			rewards: [
+				{
+					id: 51,
+					type: "item",
+					item: {
+						id: "minecraft:crossbow",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 52,
+					type: "item",
+					item: {
+						id: "minecraft:arrow",
+						Count: 16b
+					}
+				}
+			]
+		},
+		{
+			title: "Ravaging Beasts of Burden",
+			icon: "minecraft:ravager_spawn_egg",
+			x: -3.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;17],
+			dependency_requirement: "all_completed",
+			id: 49,
+			tasks: [
+				{
+					id: 50,
+					type: "kill",
+					entity: "minecraft:ravager",
+					value: 1L
+				},
+				{
+					id: 74,
+					type: "item",
+					item: "quark:ravager_hide",
+					count: 2L
+				}
+			],
+			rewards: [{
+				id: 142,
+				type: "item",
+				item: {
+					id: "minecraft:emerald",
+					Count: 2b
+				}
+			}]
+		},
+		{
+			title: "Stone Variants",
+			icon: "minecraft:stonecutter",
+			x: -2.0d,
+			y: -3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;17],
+			dependency_requirement: "all_completed",
+			id: 53,
+			tasks: [
+				{
+					id: 54,
+					type: "item",
+					item: "minecraft:stonecutter"
+				},
+				{
+					id: 75,
+					type: "item",
+					item: "minecraft:stone_bricks",
+					count: 8L
+				},
+				{
+					id: 76,
+					type: "item",
+					item: "minecraft:cracked_stone_bricks",
+					count: 8L
+				},
+				{
+					id: 77,
+					type: "item",
+					item: "minecraft:chiseled_stone_bricks",
+					count: 8L
+				}
+			],
+			rewards: [{
+				id: 78,
+				type: "item",
+				item: {
+					id: "minecraft:stone_bricks",
+					Count: 32b
+				}
+			}]
+		},
+		{
+			title: "Primitive Cooking",
+			icon: "minecraft:campfire",
+			x: -2.0d,
+			y: -4.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;17],
+			dependency_requirement: "all_completed",
+			id: 55,
+			tasks: [{
+				id: 56,
+				type: "item",
+				item: "minecraft:campfire"
+			}],
+			rewards: [
+				{
+					id: 83,
+					type: "item",
+					item: {
+						id: "minecraft:cooked_beef",
+						Count: 4b
+					}
+				},
+				{
+					id: 84,
+					type: "item",
+					item: {
+						id: "minecraft:cooked_porkchop",
+						Count: 4b
+					}
+				}
+			]
+		},
+		{
+			title: "Specialized Tables",
+			icon: "minecraft:cartography_table",
+			x: -1.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;17],
+			dependency_requirement: "all_completed",
+			id: 57,
+			tasks: [
+				{
+					id: 58,
+					type: "item",
+					item: "minecraft:loom"
+				},
+				{
+					id: 59,
+					type: "item",
+					item: "minecraft:grindstone"
+				},
+				{
+					id: 60,
+					type: "item",
+					item: "minecraft:cartography_table"
+				}
+			],
+			rewards: [
+				{
+					id: 89,
+					type: "item",
+					item: "minecraft:white_banner"
+				},
+				{
+					id: 90,
+					type: "item",
+					item: {
+						id: "minecraft:white_wool",
+						Count: 4b
+					}
+				}
+			]
+		},
+		{
+			title: "Easy Bone Meal",
+			icon: "minecraft:composter",
+			x: -1.0d,
+			y: -4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;17],
+			dependency_requirement: "all_completed",
+			id: 61,
+			tasks: [
+				{
+					id: 62,
+					type: "item",
+					item: "minecraft:composter"
+				},
+				{
+					id: 63,
+					type: "item",
+					item: "minecraft:bone_meal",
+					count: 16L
+				}
+			],
+			rewards: [
+				{
+					id: 87,
+					type: "item",
+					item: {
+						id: "minecraft:bone_meal",
+						Count: 8b
+					}
+				},
+				{
+					id: 88,
+					type: "item",
+					item: {
+						id: "minecraft:oak_leaves",
+						Count: 32b
+					}
+				}
+			]
+		},
+		{
+			title: "Bamboo Jungles",
+			icon: "minecraft:bamboo",
+			x: -1.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;17],
+			dependency_requirement: "all_completed",
+			id: 64,
+			tasks: [
+				{
+					id: 65,
+					type: "item",
+					item: "minecraft:bamboo"
+				},
+				{
+					id: 66,
+					type: "item",
+					item: "minecraft:scaffolding",
+					count: 24L
+				}
+			],
+			rewards: [
+				{
+					id: 85,
+					type: "item",
+					item: {
+						id: "minecraft:scaffolding",
+						Count: 8b
+					}
+				},
+				{
+					id: 86,
+					type: "item",
+					item: "thermal:bamboo_block"
+				}
+			]
+		},
+		{
+			title: "Sticky Situation",
+			icon: "minecraft:honey_block",
+			x: -6.5d,
+			y: -2.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;21],
+			dependency_requirement: "all_completed",
+			id: 67,
+			tasks: [{
+				id: 68,
+				type: "item",
+				item: "minecraft:honey_block"
+			}],
+			rewards: [{
+				id: 92,
+				type: "item",
+				item: {
+					id: "minecraft:honey_block",
+					Count: 2b
+				}
+			}]
+		},
+		{
+			title: "Beekeeping",
+			icon: "minecraft:beehive",
+			x: -5.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;21],
+			dependency_requirement: "all_completed",
+			id: 69,
+			tasks: [{
+				id: 70,
+				type: "item",
+				item: "minecraft:beehive"
+			}],
+			rewards: [
+				{
+					id: 93,
+					type: "item",
+					item: {
+						id: "minecraft:poppy",
+						Count: 4b
+					}
+				},
+				{
+					id: 94,
+					type: "item",
+					item: {
+						id: "minecraft:blue_orchid",
+						Count: 4b
+					}
+				}
+			]
+		},
+		{
+			title: "Wax Candles",
+			icon: "buzzierbees:wax",
+			x: -4.5d,
+			y: -2.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;21],
+			dependency_requirement: "all_completed",
+			id: 71,
+			tasks: [
+				{
+					id: 72,
+					type: "item",
+					item: "buzzierbees:wax",
+					count: 2L
+				},
+				{
+					id: 73,
+					type: "item",
+					item: "buzzierbees:candle",
+					count: 8L
+				}
+			],
+			rewards: [
+				{
+					id: 95,
+					type: "item",
+					item: {
+						id: "buzzierbees:candle",
+						Count: 16b
+					}
+				},
+				{
+					id: 96,
+					type: "item",
+					item: {
+						id: "buzzierbees:hive_planks",
+						Count: 16b
+					}
+				}
+			]
+		}
+	]
 }
