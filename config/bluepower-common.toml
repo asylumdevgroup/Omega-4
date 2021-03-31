@@ -19,7 +19,7 @@
 	#Teslatite Max Y
 	maxTeslatiteY = 20
 	#Generate Amethyst
-	generateAmethyst = true
+	generateAmethyst = false
 	#Generate Zinc
 	generateZinc = false
 	#Vein Size Teslatite

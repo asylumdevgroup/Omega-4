@@ -1,6 +1,6 @@
 
 [worldgen]
-	enabled = true
+	enabled = false
 
 	[worldgen.tin]
 		#Range: > 1
