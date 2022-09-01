@@ -25,7 +25,25 @@
 				type: "checkmark",
 				title: "Build Better Bases - Unlock Chapter",
 				icon: "prefab:item_start_house"
-			}]
+			}],
+			rewards: [
+				{
+					id: 307,
+					type: "item",
+					item: {
+						id: "minecraft:oak_planks",
+						Count: 64b
+					}
+				},
+				{
+					id: 308,
+					type: "item",
+					item: {
+						id: "minecraft:stone_bricks",
+						Count: 64b
+					}
+				}
+			]
 		},
 		{
 			title: "First Major House",

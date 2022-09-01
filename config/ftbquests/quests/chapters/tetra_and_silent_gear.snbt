@@ -1,29 +1,145 @@
 {
 	id: 45,
 	filename: "tetra_and_silent_gear",
-	order_index: 4,
+	order_index: 6,
 	title: "Tetra and Silent Gear",
 	icon: "tetra:basic_workbench",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "default",
 	images: [],
-	quests: [{
-		x: 0.0d,
-		y: 0.0d,
-		shape: "gear",
-		subtitle: "",
-		size: 2.0d,
-		description: ["Coming Soon!!!"],
-		min_required_dependencies: 0,
-		dependencies: [I;],
-		dependency_requirement: "all_completed",
-		id: 187,
-		tasks: [{
-			id: 188,
-			type: "checkmark",
-			title: "Tetra and Silent Gear - Unlock Chapter",
-			icon: "tetra:basic_workbench"
-		}]
-	}]
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			shape: "gear",
+			subtitle: "",
+			size: 2.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;],
+			dependency_requirement: "all_completed",
+			id: 187,
+			tasks: [{
+				id: 188,
+				type: "checkmark",
+				title: "Tetra and Silent Gear - Unlock Chapter",
+				icon: "tetra:basic_workbench"
+			}],
+			rewards: [{
+				id: 425,
+				type: "item",
+				item: {
+					id: "tetra:modular_double",
+					Count: 1b,
+					tag: {
+						"double/handle": "double/basic_handle",
+						"double/head_left": "double/basic_hammer_left",
+						"double/head_right": "double/basic_hammer_right",
+						Damage: 0,
+						"double/basic_hammer_right_material": "basic_hammer/log",
+						"double/basic_handle_material": "basic_handle/stick",
+						"double/basic_hammer_left_material": "basic_hammer/log"
+					}
+				}
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;187],
+			dependency_requirement: "all_completed",
+			id: 411,
+			tasks: [{
+				id: 412,
+				type: "item",
+				item: "silentgear:blueprint_paper"
+			}]
+		},
+		{
+			title: "Silent Gear Ores",
+			x: -1.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;411],
+			dependency_requirement: "all_completed",
+			id: 413,
+			tasks: [
+				{
+					id: 414,
+					type: "item",
+					item: "silentgear:crimson_iron_ore"
+				},
+				{
+					id: 417,
+					type: "item",
+					item: "silentgear:azure_silver_ore"
+				}
+			]
+		},
+		{
+			title: "Silent Gear Ingots",
+			x: -1.5d,
+			y: -2.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;413],
+			dependency_requirement: "all_completed",
+			id: 418,
+			tasks: [
+				{
+					id: 419,
+					type: "item",
+					item: "silentgear:crimson_iron_ingot"
+				},
+				{
+					id: 420,
+					type: "item",
+					item: "silentgear:azure_silver_ingot"
+				}
+			]
+		},
+		{
+			title: "Silent Gear Alloys",
+			x: -2.5d,
+			y: -2.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;418],
+			dependency_requirement: "all_completed",
+			id: 421,
+			tasks: [
+				{
+					id: 422,
+					type: "item",
+					item: "silentgear:crimson_steel_ingot"
+				},
+				{
+					id: 423,
+					type: "item",
+					item: "silentgear:azure_electrum_ingot"
+				},
+				{
+					id: 424,
+					type: "item",
+					item: "silentgear:blaze_gold_ingot"
+				}
+			]
+		}
+	]
 }

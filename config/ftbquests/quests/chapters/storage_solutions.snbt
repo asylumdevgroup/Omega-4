@@ -1,0 +1,499 @@
+{
+	id: 304,
+	filename: "storage_solutions",
+	order_index: 4,
+	title: "Storage Solutions",
+	icon: "ironchest:diamond_chest",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: [
+		{
+			x: 1.5d,
+			y: -0.5d,
+			shape: "gear",
+			subtitle: "",
+			size: 2.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;],
+			dependency_requirement: "all_completed",
+			id: 305,
+			tasks: [{
+				id: 306,
+				type: "checkmark",
+				title: "Storage Solutions - Unlock Chapter",
+				icon: "minecraft:chest"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;305],
+			dependency_requirement: "all_completed",
+			id: 309,
+			tasks: [{
+				id: 310,
+				type: "item",
+				item: "minecraft:chest"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;309],
+			dependency_requirement: "all_completed",
+			id: 311,
+			tasks: [{
+				id: 312,
+				type: "item",
+				item: "ironchest:iron_chest"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;311],
+			dependency_requirement: "all_completed",
+			id: 313,
+			tasks: [{
+				id: 314,
+				type: "item",
+				item: "ironchest:gold_chest"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;309],
+			dependency_requirement: "all_completed",
+			id: 315,
+			tasks: [{
+				id: 316,
+				type: "item",
+				item: "ironchest:copper_chest"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;315],
+			dependency_requirement: "all_completed",
+			id: 317,
+			tasks: [{
+				id: 318,
+				type: "item",
+				item: "ironchest:silver_chest"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				317,
+				313
+			],
+			dependency_requirement: "one_completed",
+			id: 319,
+			tasks: [{
+				id: 320,
+				type: "item",
+				item: "ironchest:diamond_chest"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;319],
+			dependency_requirement: "all_completed",
+			id: 321,
+			tasks: [{
+				id: 322,
+				type: "item",
+				item: "ironchest:crystal_chest"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;319],
+			dependency_requirement: "all_completed",
+			id: 323,
+			tasks: [{
+				id: 324,
+				type: "item",
+				item: "ironchest:obsidian_chest"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;305],
+			dependency_requirement: "all_completed",
+			id: 326,
+			tasks: [
+				{
+					id: 331,
+					type: "item",
+					item: "storagedrawers:oak_full_drawers_1"
+				},
+				{
+					id: 332,
+					type: "item",
+					item: "storagedrawers:oak_full_drawers_2"
+				},
+				{
+					id: 333,
+					type: "item",
+					item: "storagedrawers:oak_full_drawers_4"
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;326],
+			dependency_requirement: "all_completed",
+			id: 328,
+			tasks: [
+				{
+					id: 329,
+					type: "item",
+					item: "storagedrawers:upgrade_template"
+				},
+				{
+					id: 330,
+					type: "item",
+					item: "storagedrawers:drawer_key"
+				}
+			]
+		},
+		{
+			x: 5.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;328],
+			dependency_requirement: "all_completed",
+			id: 334,
+			tasks: [{
+				id: 335,
+				type: "item",
+				item: "storagedrawers:obsidian_storage_upgrade"
+			}]
+		},
+		{
+			title: "Misc. Upgrades",
+			x: 4.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;328],
+			dependency_requirement: "all_completed",
+			id: 336,
+			tasks: [
+				{
+					id: 337,
+					type: "item",
+					item: "storagedrawers:void_upgrade"
+				},
+				{
+					id: 338,
+					type: "item",
+					item: "storagedrawers:conversion_upgrade"
+				},
+				{
+					id: 339,
+					type: "item",
+					item: "storagedrawers:redstone_upgrade"
+				},
+				{
+					id: 340,
+					type: "item",
+					item: "storagedrawers:illumination_upgrade"
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;328],
+			dependency_requirement: "all_completed",
+			id: 341,
+			tasks: [{
+				id: 342,
+				type: "item",
+				item: "storagedrawers:one_stack_upgrade"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;334],
+			dependency_requirement: "all_completed",
+			id: 343,
+			tasks: [{
+				id: 344,
+				type: "item",
+				item: "storagedrawers:iron_storage_upgrade"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;343],
+			dependency_requirement: "all_completed",
+			id: 345,
+			tasks: [{
+				id: 346,
+				type: "item",
+				item: "storagedrawers:gold_storage_upgrade"
+			}]
+		},
+		{
+			x: 8.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;345],
+			dependency_requirement: "all_completed",
+			id: 347,
+			tasks: [{
+				id: 348,
+				type: "item",
+				item: "storagedrawers:diamond_storage_upgrade"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;347],
+			dependency_requirement: "all_completed",
+			id: 349,
+			tasks: [{
+				id: 350,
+				type: "item",
+				item: "storagedrawers:emerald_storage_upgrade"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -2.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;305],
+			dependency_requirement: "all_completed",
+			id: 351,
+			tasks: [{
+				id: 352,
+				type: "item",
+				item: "minecraft:barrel"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;351],
+			dependency_requirement: "all_completed",
+			id: 353,
+			tasks: [{
+				id: 354,
+				type: "item",
+				item: "metalbarrels:iron_barrel"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;351],
+			dependency_requirement: "all_completed",
+			id: 355,
+			tasks: [{
+				id: 356,
+				type: "item",
+				item: "metalbarrels:copper_barrel"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -4.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;353],
+			dependency_requirement: "all_completed",
+			id: 357,
+			tasks: [{
+				id: 358,
+				type: "item",
+				item: "metalbarrels:gold_barrel"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -4.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;355],
+			dependency_requirement: "all_completed",
+			id: 359,
+			tasks: [{
+				id: 360,
+				type: "item",
+				item: "metalbarrels:silver_barrel"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -5.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				357,
+				359
+			],
+			dependency_requirement: "one_completed",
+			id: 361,
+			tasks: [{
+				id: 362,
+				type: "item",
+				item: "metalbarrels:diamond_barrel"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -6.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;361],
+			dependency_requirement: "all_completed",
+			id: 363,
+			tasks: [{
+				id: 364,
+				type: "item",
+				item: "metalbarrels:crystal_barrel"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -6.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;361],
+			dependency_requirement: "all_completed",
+			id: 365,
+			tasks: [{
+				id: 366,
+				type: "item",
+				item: "metalbarrels:obsidian_barrel"
+			}]
+		}
+	]
+}

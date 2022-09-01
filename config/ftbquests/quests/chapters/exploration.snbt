@@ -1,0 +1,415 @@
+{
+	id: 367,
+	filename: "exploration",
+	order_index: 7,
+	title: "Transportation",
+	icon: "minecraft:rail",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			shape: "gear",
+			subtitle: "",
+			size: 2.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;],
+			dependency_requirement: "all_completed",
+			id: 368,
+			tasks: [{
+				id: 369,
+				type: "checkmark",
+				title: "Transportation - Unlock Chapter",
+				icon: "minecraft:rail"
+			}],
+			rewards: [{
+				id: 426,
+				type: "item",
+				item: "minecraft:rail"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;368],
+			dependency_requirement: "all_completed",
+			id: 370,
+			tasks: [{
+				id: 371,
+				type: "item",
+				item: "ironjetpacks:wood_jetpack"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;370],
+			dependency_requirement: "all_completed",
+			id: 372,
+			tasks: [{
+				id: 373,
+				type: "item",
+				item: "ironjetpacks:stone_jetpack"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;370],
+			dependency_requirement: "all_completed",
+			id: 374,
+			tasks: [{
+				id: 375,
+				type: "item",
+				item: "ironjetpacks:copper_jetpack"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				374,
+				372
+			],
+			dependency_requirement: "one_completed",
+			id: 376,
+			tasks: [{
+				id: 377,
+				type: "item",
+				item: "ironjetpacks:iron_jetpack"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				374,
+				372
+			],
+			dependency_requirement: "one_completed",
+			id: 378,
+			tasks: [{
+				id: 379,
+				type: "item",
+				item: "ironjetpacks:bronze_jetpack"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				374,
+				372
+			],
+			dependency_requirement: "all_completed",
+			id: 380,
+			tasks: [{
+				id: 381,
+				type: "item",
+				item: "ironjetpacks:silver_jetpack"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				376,
+				378,
+				380
+			],
+			dependency_requirement: "one_completed",
+			id: 382,
+			tasks: [{
+				id: 383,
+				type: "item",
+				item: "ironjetpacks:electrum_jetpack"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				378,
+				376,
+				380
+			],
+			dependency_requirement: "one_completed",
+			id: 384,
+			tasks: [{
+				id: 385,
+				type: "item",
+				item: "ironjetpacks:gold_jetpack"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				378,
+				376,
+				380
+			],
+			dependency_requirement: "one_completed",
+			id: 386,
+			tasks: [{
+				id: 387,
+				type: "item",
+				item: "ironjetpacks:steel_jetpack"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				378,
+				376,
+				380
+			],
+			dependency_requirement: "one_completed",
+			id: 388,
+			tasks: [{
+				id: 389,
+				type: "item",
+				item: "ironjetpacks:invar_jetpack"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: 0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				382,
+				384,
+				388,
+				386
+			],
+			dependency_requirement: "one_completed",
+			id: 390,
+			tasks: [{
+				id: 391,
+				type: "item",
+				item: "ironjetpacks:diamond_jetpack"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				382,
+				384,
+				388,
+				386
+			],
+			dependency_requirement: "one_completed",
+			id: 392,
+			tasks: [{
+				id: 393,
+				type: "item",
+				item: "ironjetpacks:platinum_jetpack"
+			}]
+		},
+		{
+			x: -6.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				390,
+				392
+			],
+			dependency_requirement: "one_completed",
+			id: 394,
+			tasks: [{
+				id: 395,
+				type: "item",
+				item: "ironjetpacks:emerald_jetpack"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;368],
+			dependency_requirement: "all_completed",
+			id: 396,
+			tasks: [{
+				id: 397,
+				type: "item",
+				item: "waystones:waystone"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;368],
+			dependency_requirement: "all_completed",
+			id: 398,
+			tasks: [{
+				id: 399,
+				type: "item",
+				item: "usefulbackpacks:backpack_small"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;398],
+			dependency_requirement: "all_completed",
+			id: 400,
+			tasks: [{
+				id: 401,
+				type: "item",
+				item: "usefulbackpacks:backpack_medium"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;400],
+			dependency_requirement: "all_completed",
+			id: 402,
+			tasks: [{
+				id: 403,
+				type: "item",
+				item: "usefulbackpacks:backpack_large"
+			}]
+		},
+		{
+			title: "Useful Rails",
+			x: 0.0d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;368],
+			dependency_requirement: "all_completed",
+			id: 404,
+			tasks: [
+				{
+					id: 405,
+					type: "item",
+					item: "usefulrailroads:highspeed_rail"
+				},
+				{
+					id: 406,
+					type: "item",
+					item: "usefulrailroads:clamp_rail"
+				},
+				{
+					id: 407,
+					type: "item",
+					item: "usefulrailroads:intersection_rail"
+				},
+				{
+					id: 408,
+					type: "item",
+					item: "usefulrailroads:buffer_stop"
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: 2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;404],
+			dependency_requirement: "all_completed",
+			id: 409,
+			tasks: [{
+				id: 410,
+				type: "item",
+				item: "usefulrailroads:teleport_rail"
+			}]
+		}
+	]
+}

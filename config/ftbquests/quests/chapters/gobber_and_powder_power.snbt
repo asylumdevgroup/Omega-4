@@ -1,7 +1,7 @@
 {
 	id: 46,
 	filename: "gobber_and_powder_power",
-	order_index: 5,
+	order_index: 7,
 	title: "Gobber and Powder Power",
 	icon: "gobber2:gobber2_ingot",
 	always_invisible: false,
