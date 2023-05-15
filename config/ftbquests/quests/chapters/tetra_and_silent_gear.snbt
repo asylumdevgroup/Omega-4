@@ -1,7 +1,7 @@
 {
 	id: 45,
 	filename: "tetra_and_silent_gear",
-	order_index: 6,
+	order_index: 5,
 	title: "Tetra and Silent Gear",
 	icon: "tetra:basic_workbench",
 	always_invisible: false,

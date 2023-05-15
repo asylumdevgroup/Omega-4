@@ -1,7 +1,7 @@
 {
 	id: 367,
 	filename: "exploration",
-	order_index: 7,
+	order_index: 6,
 	title: "Transportation",
 	icon: "minecraft:rail",
 	always_invisible: false,

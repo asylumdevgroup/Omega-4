@@ -1,0 +1,444 @@
+{
+	id: 429,
+	filename: "resources",
+	order_index: 8,
+	title: "Resource Collection",
+	icon: "mysticalagriculture:inferium_essence",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: [
+		{
+			icon: "mysticalagriculture:inferium_essence",
+			x: -1.5d,
+			y: -1.0d,
+			shape: "gear",
+			subtitle: "",
+			size: 2.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;],
+			dependency_requirement: "all_completed",
+			id: 430,
+			tasks: [{
+				id: 431,
+				type: "checkmark",
+				title: "Resource Collection - Unlock Chapter"
+			}]
+		},
+		{
+			title: "Starting Mystical Agriculture",
+			icon: "mysticalagriculture:prosperity_shard",
+			x: -3.0d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;430],
+			dependency_requirement: "all_completed",
+			id: 432,
+			tasks: [
+				{
+					id: 433,
+					type: "item",
+					item: "mysticalagriculture:inferium_essence"
+				},
+				{
+					id: 434,
+					type: "item",
+					item: "mysticalagriculture:prosperity_shard"
+				}
+			]
+		},
+		{
+			x: -4.0d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;432],
+			dependency_requirement: "all_completed",
+			id: 435,
+			tasks: [{
+				id: 436,
+				type: "item",
+				item: {
+					id: "mysticalagriculture:infusion_crystal",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;430],
+			dependency_requirement: "all_completed",
+			id: 437,
+			tasks: [{
+				id: 438,
+				type: "item",
+				item: "waterstrainer:strainer_survivalist"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;437],
+			dependency_requirement: "all_completed",
+			id: 439,
+			tasks: [{
+				id: 440,
+				type: "item",
+				item: "waterstrainer:strainer_survivalist_solid"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;439],
+			dependency_requirement: "all_completed",
+			id: 441,
+			tasks: [{
+				id: 442,
+				type: "item",
+				item: "waterstrainer:strainer_survivalist_reinforced"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -2.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;432],
+			dependency_requirement: "all_completed",
+			id: 443,
+			tasks: [{
+				id: 444,
+				type: "item",
+				item: "mysticalagriculture:prosperity_ingot"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;443],
+			dependency_requirement: "all_completed",
+			id: 445,
+			tasks: [
+				{
+					id: 446,
+					type: "item",
+					item: "mysticalagriculture:inferium_ingot"
+				},
+				{
+					id: 449,
+					type: "item",
+					item: "mysticalagradditions:inferium_coal"
+				},
+				{
+					id: 450,
+					type: "item",
+					item: "mysticalagriculture:inferium_gemstone"
+				}
+			]
+		},
+		{
+			x: -4.0d,
+			y: -4.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;435],
+			dependency_requirement: "all_completed",
+			id: 451,
+			tasks: [{
+				id: 452,
+				type: "item",
+				item: "mysticalagriculture:prudentium_essence"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -5.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;451],
+			dependency_requirement: "all_completed",
+			id: 453,
+			tasks: [{
+				id: 454,
+				type: "item",
+				item: "mysticalagriculture:tertium_essence"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -6.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;453],
+			dependency_requirement: "all_completed",
+			id: 455,
+			tasks: [{
+				id: 456,
+				type: "item",
+				item: "mysticalagriculture:imperium_essence"
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -7.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;455],
+			dependency_requirement: "all_completed",
+			id: 457,
+			tasks: [{
+				id: 458,
+				type: "item",
+				item: "mysticalagriculture:supremium_essence"
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -8.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;457],
+			dependency_requirement: "all_completed",
+			id: 459,
+			tasks: [{
+				id: 460,
+				type: "item",
+				item: "mysticalagradditions:insanium_essence"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -4.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;451],
+			dependency_requirement: "one_completed",
+			id: 461,
+			tasks: [
+				{
+					id: 462,
+					type: "item",
+					item: "mysticalagriculture:prudentium_ingot"
+				},
+				{
+					id: 463,
+					type: "item",
+					item: "mysticalagradditions:prudentium_coal"
+				},
+				{
+					id: 464,
+					type: "item",
+					item: "mysticalagriculture:prudentium_gemstone"
+				}
+			]
+		},
+		{
+			x: -4.0d,
+			y: -5.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;453],
+			dependency_requirement: "all_completed",
+			id: 465,
+			tasks: [
+				{
+					id: 466,
+					type: "item",
+					item: "mysticalagriculture:tertium_ingot"
+				},
+				{
+					id: 467,
+					type: "item",
+					item: "mysticalagradditions:tertium_coal"
+				},
+				{
+					id: 468,
+					type: "item",
+					item: "mysticalagriculture:tertium_gemstone"
+				}
+			]
+		},
+		{
+			x: -5.0d,
+			y: -6.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;455],
+			dependency_requirement: "all_completed",
+			id: 469,
+			tasks: [
+				{
+					id: 470,
+					type: "item",
+					item: "mysticalagriculture:imperium_ingot"
+				},
+				{
+					id: 471,
+					type: "item",
+					item: "mysticalagradditions:imperium_coal"
+				},
+				{
+					id: 472,
+					type: "item",
+					item: "mysticalagriculture:imperium_gemstone"
+				}
+			]
+		},
+		{
+			x: -6.0d,
+			y: -7.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;457],
+			dependency_requirement: "all_completed",
+			id: 473,
+			tasks: [
+				{
+					id: 474,
+					type: "item",
+					item: "mysticalagriculture:supremium_ingot"
+				},
+				{
+					id: 475,
+					type: "item",
+					item: "mysticalagradditions:supremium_coal"
+				},
+				{
+					id: 476,
+					type: "item",
+					item: "mysticalagriculture:supremium_gemstone"
+				}
+			]
+		},
+		{
+			x: -7.0d,
+			y: -8.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;459],
+			dependency_requirement: "all_completed",
+			id: 477,
+			tasks: [
+				{
+					id: 478,
+					type: "item",
+					item: "mysticalagradditions:insanium_ingot"
+				},
+				{
+					id: 479,
+					type: "item",
+					item: "mysticalagradditions:insanium_gemstone"
+				}
+			]
+		},
+		{
+			x: -5.0d,
+			y: -7.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;473],
+			dependency_requirement: "all_completed",
+			id: 480,
+			tasks: [{
+				id: 481,
+				type: "item",
+				item: "mysticalagriculture:master_infusion_crystal"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;432],
+			dependency_requirement: "all_completed",
+			id: 482,
+			tasks: [
+				{
+					id: 483,
+					type: "item",
+					item: "mysticalagriculture:infusion_altar"
+				},
+				{
+					id: 484,
+					type: "item",
+					item: "mysticalagriculture:infusion_pedestal",
+					count: 8L
+				}
+			]
+		}
+	]
+}

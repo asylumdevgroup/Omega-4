@@ -1,0 +1,12 @@
+{
+	id: 428,
+	filename: "mekanism",
+	order_index: 9,
+	title: "Mekanism",
+	icon: "mekanism:ingot_osmium",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: []
+}

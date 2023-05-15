@@ -1,0 +1,12 @@
+{
+	id: 427,
+	filename: "silents_mechanisms",
+	order_index: 8,
+	title: "Silent's Mechanisms",
+	icon: "silents_mechanisms:crusher",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: []
+}
