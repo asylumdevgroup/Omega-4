@@ -1,12 +1,423 @@
 {
 	id: 427,
 	filename: "silents_mechanisms",
-	order_index: 8,
+	order_index: 9,
 	title: "Silent's Mechanisms",
 	icon: "silents_mechanisms:crusher",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "default",
 	images: [],
-	quests: []
+	quests: [
+		{
+			icon: "silents_mechanisms:alloy_machine_frame",
+			x: 0.0d,
+			y: 0.0d,
+			shape: "gear",
+			subtitle: "",
+			size: 2.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;],
+			dependency_requirement: "all_completed",
+			id: 485,
+			tasks: [{
+				id: 486,
+				type: "checkmark",
+				title: "Silent's Mechanisms - Unlock Chapter"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;485],
+			dependency_requirement: "all_completed",
+			id: 487,
+			tasks: [{
+				id: 488,
+				type: "item",
+				item: "silents_mechanisms:stone_machine_frame"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;487],
+			dependency_requirement: "all_completed",
+			id: 489,
+			tasks: [{
+				id: 490,
+				type: "item",
+				item: "silents_mechanisms:coal_generator"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;489],
+			dependency_requirement: "all_completed",
+			id: 491,
+			tasks: [{
+				id: 492,
+				type: "item",
+				item: "silents_mechanisms:basic_alloy_smelter"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;489],
+			dependency_requirement: "all_completed",
+			id: 493,
+			tasks: [{
+				id: 494,
+				type: "item",
+				item: "silents_mechanisms:basic_crusher"
+			}]
+		},
+		{
+			title: "Basic Alloys",
+			icon: "silents_mechanisms:redstone_alloy_ingot",
+			x: 0.0d,
+			y: -4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				491,
+				493
+			],
+			dependency_requirement: "all_completed",
+			id: 495,
+			tasks: [
+				{
+					id: 496,
+					type: "item",
+					item: "silents_mechanisms:steel_ingot"
+				},
+				{
+					id: 497,
+					type: "item",
+					item: "silents_mechanisms:redstone_alloy_ingot"
+				},
+				{
+					id: 504,
+					type: "item",
+					item: "silents_mechanisms:aluminum_steel_ingot"
+				},
+				{
+					id: 505,
+					type: "item",
+					item: "silents_mechanisms:bismuth_steel_ingot"
+				},
+				{
+					id: 506,
+					type: "item",
+					item: "silents_mechanisms:bismuth_brass_ingot"
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -5.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;495],
+			dependency_requirement: "all_completed",
+			id: 498,
+			tasks: [{
+				id: 499,
+				type: "item",
+				item: "silents_mechanisms:alloy_machine_frame"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -6.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;498],
+			dependency_requirement: "all_completed",
+			id: 500,
+			tasks: [{
+				id: 501,
+				type: "item",
+				item: "silents_mechanisms:crusher"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -6.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;498],
+			dependency_requirement: "all_completed",
+			id: 502,
+			tasks: [{
+				id: 503,
+				type: "item",
+				item: "silents_mechanisms:alloy_smelter"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -6.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;498],
+			dependency_requirement: "all_completed",
+			id: 507,
+			tasks: [{
+				id: 508,
+				type: "item",
+				item: "silents_mechanisms:compressor"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -6.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;498],
+			dependency_requirement: "all_completed",
+			id: 509,
+			tasks: [{
+				id: 510,
+				type: "item",
+				item: "silents_mechanisms:electric_furnace"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -6.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;498],
+			dependency_requirement: "all_completed",
+			id: 511,
+			tasks: [{
+				id: 512,
+				type: "item",
+				item: "silents_mechanisms:mixer"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -6.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;498],
+			dependency_requirement: "all_completed",
+			id: 513,
+			tasks: [{
+				id: 514,
+				type: "item",
+				item: "silents_mechanisms:refinery"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -6.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;498],
+			dependency_requirement: "all_completed",
+			id: 515,
+			tasks: [{
+				id: 516,
+				type: "item",
+				item: "silents_mechanisms:solidifier"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -7.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;498],
+			dependency_requirement: "all_completed",
+			id: 517,
+			tasks: [{
+				id: 518,
+				type: "item",
+				item: "silents_mechanisms:pump"
+			}]
+		},
+		{
+			title: "Plastic",
+			x: 0.0d,
+			y: -8.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				517,
+				513,
+				511,
+				515
+			],
+			dependency_requirement: "all_completed",
+			id: 521,
+			tasks: [
+				{
+					id: 522,
+					type: "item",
+					item: "silents_mechanisms:plastic_pellets"
+				},
+				{
+					id: 523,
+					type: "item",
+					item: "silents_mechanisms:plastic_sheet"
+				}
+			]
+		},
+		{
+			x: -1.5d,
+			y: -5.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;498],
+			dependency_requirement: "all_completed",
+			id: 524,
+			tasks: [{
+				id: 525,
+				type: "item",
+				item: "silents_mechanisms:lava_generator"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -5.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;498],
+			dependency_requirement: "all_completed",
+			id: 526,
+			tasks: [{
+				id: 527,
+				type: "item",
+				item: "silents_mechanisms:diesel_generator"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;498],
+			dependency_requirement: "all_completed",
+			id: 528,
+			tasks: [{
+				id: 529,
+				type: "item",
+				item: "silents_mechanisms:battery_box"
+			}]
+		},
+		{
+			title: "Silent's Upgrades",
+			icon: "silents_mechanisms:upgrade_case",
+			x: 0.0d,
+			y: -9.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;521],
+			dependency_requirement: "all_completed",
+			id: 530,
+			tasks: [
+				{
+					id: 531,
+					type: "item",
+					item: "silents_mechanisms:upgrade_case"
+				},
+				{
+					id: 532,
+					type: "item",
+					item: "silents_mechanisms:processing_speed_upgrade"
+				},
+				{
+					id: 533,
+					type: "item",
+					item: "silents_mechanisms:output_chance_upgrade"
+				},
+				{
+					id: 534,
+					type: "item",
+					item: "silents_mechanisms:energy_capacity_upgrade"
+				},
+				{
+					id: 535,
+					type: "item",
+					item: "silents_mechanisms:energy_efficiency_upgrade"
+				},
+				{
+					id: 536,
+					type: "item",
+					item: "silents_mechanisms:range_upgrade"
+				}
+			]
+		}
+	]
 }

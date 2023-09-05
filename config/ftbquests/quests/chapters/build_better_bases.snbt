@@ -438,6 +438,53 @@
 					item: "decorative_blocks:stone_pillar"
 				}
 			]
+		},
+		{
+			x: -4.0d,
+			y: -3.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;6],
+			dependency_requirement: "all_completed",
+			id: 537,
+			tasks: [{
+				id: 538,
+				type: "item",
+				item: {
+					id: "rechiseled:chisel",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			title: "Woodcutter",
+			icon: "corail_woodcutter:oak_woodcutter",
+			x: -4.0d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;6],
+			dependency_requirement: "all_completed",
+			id: 539,
+			tasks: [{
+				id: 540,
+				type: "item",
+				title: "Any corail_woodcutter:woodcutters",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "corail_woodcutter:woodcutters"
+					}
+				}
+			}]
 		}
 	]
 }
