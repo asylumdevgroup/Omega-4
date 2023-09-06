@@ -8,5 +8,843 @@
 	group: 0,
 	default_quest_shape: "default",
 	images: [],
-	quests: []
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			shape: "gear",
+			subtitle: "",
+			size: 2.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;],
+			dependency_requirement: "all_completed",
+			id: 543,
+			tasks: [{
+				id: 544,
+				type: "checkmark",
+				title: "Mekanism - Unlock Chapter",
+				icon: "mekanism:ingot_osmium"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;543],
+			dependency_requirement: "all_completed",
+			id: 551,
+			tasks: [{
+				id: 552,
+				type: "item",
+				item: "mekanism:metallurgic_infuser"
+			}]
+		},
+		{
+			title: "Steel Ingot",
+			icon: "mekanism:ingot_steel",
+			x: 0.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;551],
+			dependency_requirement: "all_completed",
+			id: 553,
+			tasks: [
+				{
+					id: 554,
+					type: "item",
+					title: "Any forge:ingots/steel",
+					item: {
+						id: "itemfilters:tag",
+						Count: 1b,
+						tag: {
+							value: "forge:ingots/steel"
+						}
+					}
+				},
+				{
+					id: 626,
+					type: "item",
+					item: "mekanism:steel_casing"
+				}
+			]
+		},
+		{
+			x: -1.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;551],
+			dependency_requirement: "all_completed",
+			id: 555,
+			tasks: [{
+				id: 556,
+				type: "item",
+				item: "mekanism:basic_control_circuit"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;551],
+			dependency_requirement: "all_completed",
+			id: 557,
+			tasks: [{
+				id: 558,
+				type: "item",
+				item: "mekanism:alloy_infused"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;557],
+			dependency_requirement: "all_completed",
+			id: 559,
+			tasks: [{
+				id: 560,
+				type: "item",
+				item: "mekanism:alloy_reinforced"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;559],
+			dependency_requirement: "all_completed",
+			id: 561,
+			tasks: [{
+				id: 562,
+				type: "item",
+				item: "mekanism:alloy_atomic"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				557,
+				555
+			],
+			dependency_requirement: "all_completed",
+			id: 563,
+			tasks: [{
+				id: 564,
+				type: "item",
+				item: "mekanism:advanced_control_circuit"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				563,
+				559
+			],
+			dependency_requirement: "all_completed",
+			id: 565,
+			tasks: [{
+				id: 566,
+				type: "item",
+				item: "mekanism:elite_control_circuit"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -5.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				565,
+				561
+			],
+			dependency_requirement: "all_completed",
+			id: 567,
+			tasks: [{
+				id: 568,
+				type: "item",
+				item: "mekanism:ultimate_control_circuit"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				553,
+				555
+			],
+			dependency_requirement: "all_completed",
+			id: 569,
+			tasks: [{
+				id: 570,
+				type: "item",
+				item: "mekanism:enrichment_chamber"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				569,
+				563
+			],
+			dependency_requirement: "all_completed",
+			id: 571,
+			tasks: [{
+				id: 572,
+				type: "item",
+				item: "mekanism:purification_chamber"
+			}]
+		},
+		{
+			title: "Enriched Materials",
+			icon: "mekanism:enriched_redstone",
+			x: 2.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;569],
+			dependency_requirement: "all_completed",
+			id: 573,
+			tasks: [
+				{
+					id: 574,
+					type: "item",
+					item: "mekanism:enriched_redstone"
+				},
+				{
+					id: 575,
+					type: "item",
+					item: "mekanism:enriched_diamond"
+				},
+				{
+					id: 576,
+					type: "item",
+					item: "mekanism:enriched_refined_obsidian"
+				},
+				{
+					id: 577,
+					type: "item",
+					item: "mekanism:enriched_carbon"
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -5.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				571,
+				565
+			],
+			dependency_requirement: "all_completed",
+			id: 578,
+			tasks: [{
+				id: 579,
+				type: "item",
+				item: "mekanism:chemical_injection_chamber"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -6.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				578,
+				561
+			],
+			dependency_requirement: "all_completed",
+			id: 580,
+			tasks: [{
+				id: 581,
+				type: "item",
+				item: "mekanism:chemical_dissolution_chamber"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -6.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;557],
+			dependency_requirement: "all_completed",
+			id: 582,
+			tasks: [{
+				id: 583,
+				type: "item",
+				item: "mekanism:chemical_washer"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -6.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				578,
+				561
+			],
+			dependency_requirement: "all_completed",
+			id: 584,
+			tasks: [{
+				id: 585,
+				type: "item",
+				item: "mekanism:chemical_crystallizer"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;555],
+			dependency_requirement: "all_completed",
+			id: 586,
+			tasks: [{
+				id: 587,
+				type: "item",
+				item: "mekanism:basic_tier_installer"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;563],
+			dependency_requirement: "all_completed",
+			id: 588,
+			tasks: [{
+				id: 589,
+				type: "item",
+				item: "mekanism:advanced_tier_installer"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;565],
+			dependency_requirement: "all_completed",
+			id: 590,
+			tasks: [{
+				id: 591,
+				type: "item",
+				item: "mekanism:elite_tier_installer"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -5.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;567],
+			dependency_requirement: "all_completed",
+			id: 592,
+			tasks: [{
+				id: 593,
+				type: "item",
+				item: "mekanism:ultimate_tier_installer"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;543],
+			dependency_requirement: "all_completed",
+			id: 594,
+			tasks: [{
+				id: 595,
+				type: "item",
+				item: "mekanism:basic_fluid_tank"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;543],
+			dependency_requirement: "all_completed",
+			id: 596,
+			tasks: [{
+				id: 597,
+				type: "item",
+				item: "mekanism:basic_gas_tank"
+			}]
+		},
+		{
+			title: "Basic Cables",
+			icon: "mekanism:basic_universal_cable",
+			x: 1.5d,
+			y: 1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;543],
+			dependency_requirement: "all_completed",
+			id: 598,
+			tasks: [
+				{
+					id: 599,
+					type: "item",
+					item: "mekanism:basic_universal_cable"
+				},
+				{
+					id: 600,
+					type: "item",
+					item: "mekanism:basic_mechanical_pipe"
+				},
+				{
+					id: 601,
+					type: "item",
+					item: "mekanism:basic_pressurized_tube"
+				},
+				{
+					id: 602,
+					type: "item",
+					item: "mekanism:basic_logistical_transporter"
+				},
+				{
+					id: 603,
+					type: "item",
+					item: "mekanism:basic_thermodynamic_conductor"
+				}
+			]
+		},
+		{
+			x: 2.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;594],
+			dependency_requirement: "all_completed",
+			id: 604,
+			tasks: [{
+				id: 605,
+				type: "item",
+				item: "mekanism:advanced_fluid_tank"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;604],
+			dependency_requirement: "all_completed",
+			id: 606,
+			tasks: [{
+				id: 607,
+				type: "item",
+				item: "mekanism:elite_fluid_tank"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;606],
+			dependency_requirement: "all_completed",
+			id: 608,
+			tasks: [{
+				id: 609,
+				type: "item",
+				item: "mekanism:ultimate_fluid_tank"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;596],
+			dependency_requirement: "all_completed",
+			id: 610,
+			tasks: [{
+				id: 611,
+				type: "item",
+				item: "mekanism:advanced_gas_tank"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;610],
+			dependency_requirement: "all_completed",
+			id: 612,
+			tasks: [{
+				id: 613,
+				type: "item",
+				item: "mekanism:elite_gas_tank"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;612],
+			dependency_requirement: "all_completed",
+			id: 614,
+			tasks: [{
+				id: 615,
+				type: "item",
+				item: "mekanism:ultimate_gas_tank"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;598],
+			dependency_requirement: "all_completed",
+			id: 616,
+			tasks: [{
+				id: 617,
+				type: "item",
+				item: "mekanism:advanced_universal_cable"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;616],
+			dependency_requirement: "all_completed",
+			id: 618,
+			tasks: [{
+				id: 619,
+				type: "item",
+				item: "mekanism:elite_universal_cable"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;618],
+			dependency_requirement: "all_completed",
+			id: 620,
+			tasks: [{
+				id: 621,
+				type: "item",
+				item: "mekanism:ultimate_universal_cable"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;551],
+			dependency_requirement: "all_completed",
+			id: 622,
+			tasks: [{
+				id: 623,
+				type: "item",
+				item: "mekanism:energized_smelter"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;551],
+			dependency_requirement: "all_completed",
+			id: 624,
+			tasks: [{
+				id: 625,
+				type: "item",
+				item: "mekanism:precision_sawmill"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;557],
+			dependency_requirement: "all_completed",
+			id: 627,
+			tasks: [{
+				id: 628,
+				type: "item",
+				item: "mekanism:electrolytic_separator"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				594,
+				596,
+				555
+			],
+			dependency_requirement: "all_completed",
+			id: 629,
+			tasks: [{
+				id: 630,
+				type: "item",
+				item: "mekanism:rotary_condensentrator"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				596,
+				557
+			],
+			dependency_requirement: "all_completed",
+			id: 631,
+			tasks: [{
+				id: 632,
+				type: "item",
+				item: "mekanism:chemical_infuser"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				596,
+				557
+			],
+			dependency_requirement: "all_completed",
+			id: 633,
+			tasks: [{
+				id: 634,
+				type: "item",
+				item: "mekanism:chemical_oxidizer"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				555,
+				553
+			],
+			dependency_requirement: "all_completed",
+			id: 635,
+			tasks: [{
+				id: 636,
+				type: "item",
+				item: "mekanism:crusher"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;635],
+			dependency_requirement: "all_completed",
+			id: 637,
+			tasks: [{
+				id: 638,
+				type: "item",
+				item: "mekanismgenerators:bio_generator"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -5.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;557],
+			dependency_requirement: "all_completed",
+			id: 639,
+			tasks: [{
+				id: 640,
+				type: "item",
+				item: "mekanismgenerators:wind_generator"
+			}]
+		},
+		{
+			title: "Solar Power",
+			icon: "mekanismgenerators:advanced_solar_generator",
+			x: 3.0d,
+			y: -5.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;557],
+			dependency_requirement: "all_completed",
+			id: 641,
+			tasks: [
+				{
+					id: 642,
+					type: "item",
+					item: "mekanismgenerators:solar_generator"
+				},
+				{
+					id: 643,
+					type: "item",
+					item: "mekanismgenerators:advanced_solar_generator"
+				}
+			]
+		}
+	]
 }

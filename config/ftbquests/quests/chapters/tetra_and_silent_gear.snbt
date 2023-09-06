@@ -140,6 +140,72 @@
 					item: "silentgear:blaze_gold_ingot"
 				}
 			]
+		},
+		{
+			x: 1.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;187],
+			dependency_requirement: "all_completed",
+			id: 545,
+			tasks: [{
+				id: 546,
+				type: "item",
+				item: "tetra:basic_workbench"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 0.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;545],
+			dependency_requirement: "all_completed",
+			id: 547,
+			tasks: [{
+				id: 548,
+				type: "item",
+				item: {
+					id: "tetra:modular_double",
+					Count: 1b,
+					tag: {
+						"double/handle": "double/basic_handle",
+						honing_progress: 370,
+						"double/head_left": "double/basic_hammer_left",
+						HideFlags: 1,
+						"double/head_right": "double/basic_hammer_right",
+						id: "34b8ed46-1ac2-4e05-8add-278affeabeef",
+						Damage: 0,
+						"double/basic_hammer_right_material": "basic_hammer/stone",
+						"double/basic_handle_material": "basic_handle/stick",
+						"double/basic_hammer_left_material": "basic_hammer/stone"
+					}
+				}
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -1.0d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: ["See the Tetra Advancements for a more detailed progression overview."],
+			min_required_dependencies: 0,
+			dependencies: [I;545],
+			dependency_requirement: "all_completed",
+			id: 549,
+			tasks: [{
+				id: 550,
+				type: "checkmark",
+				title: "Tetra Advancements"
+			}]
 		}
 	]
 }
