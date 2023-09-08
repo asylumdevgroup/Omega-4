@@ -61,7 +61,7 @@
 			oreSize = 9
 			#The chance (amount of rolls) for this ore to spawn.
 			#Range: 0 ~ 127
-			oreChance = 20
+			oreChance = 0
 			#The type of block this ore will spawn in.
 			fillerBlockType = "natural_stone"
 			#The maximum height for this ore veins to spawn.
@@ -78,7 +78,7 @@
 			oreSize = 7
 			#The chance (amount of rolls) for this ore to spawn.
 			#Range: 0 ~ 127
-			oreChance = 5
+			oreChance = 0
 			#The type of block this ore will spawn in.
 			fillerBlockType = "natural_stone"
 			#The maximum height for this ore veins to spawn.

@@ -1,0 +1,1014 @@
+{
+	id: 644,
+	filename: "refined_storage_and_ae2",
+	order_index: 11,
+	title: "Refined Storage and AE2",
+	icon: "refinedstorage:creative_controller",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "default",
+	images: [],
+	quests: [
+		{
+			icon: "refinedstorage:creative_controller",
+			x: 0.5d,
+			y: -0.5d,
+			shape: "gear",
+			subtitle: "",
+			size: 2.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;],
+			dependency_requirement: "all_completed",
+			id: 645,
+			tasks: [{
+				id: 646,
+				type: "checkmark",
+				title: "Refined Storage and AE2 - Unlock Chapter"
+			}]
+		},
+		{
+			title: "RS Materials",
+			icon: "refinedstorage:quartz_enriched_iron",
+			x: -1.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;645],
+			dependency_requirement: "all_completed",
+			id: 647,
+			tasks: [
+				{
+					id: 648,
+					type: "item",
+					item: "refinedstorage:quartz_enriched_iron"
+				},
+				{
+					id: 649,
+					type: "item",
+					item: "refinedstorage:silicon"
+				}
+			]
+		},
+		{
+			x: -2.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;647],
+			dependency_requirement: "all_completed",
+			id: 650,
+			tasks: [{
+				id: 651,
+				type: "item",
+				item: "refinedstorage:machine_casing"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;647],
+			dependency_requirement: "all_completed",
+			id: 652,
+			tasks: [{
+				id: 653,
+				type: "item",
+				item: "refinedstorage:processor_binding"
+			}]
+		},
+		{
+			title: "RS Processors",
+			icon: "refinedstorage:advanced_processor",
+			x: -2.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;652],
+			dependency_requirement: "all_completed",
+			id: 654,
+			tasks: [
+				{
+					id: 655,
+					type: "item",
+					item: "refinedstorage:basic_processor"
+				},
+				{
+					id: 656,
+					type: "item",
+					item: "refinedstorage:improved_processor"
+				},
+				{
+					id: 657,
+					type: "item",
+					item: "refinedstorage:advanced_processor"
+				}
+			]
+		},
+		{
+			x: -3.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				654,
+				650
+			],
+			dependency_requirement: "all_completed",
+			id: 658,
+			tasks: [{
+				id: 659,
+				type: "item",
+				item: "refinedstorage:disk_drive"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				654,
+				650
+			],
+			dependency_requirement: "all_completed",
+			id: 660,
+			tasks: [{
+				id: 661,
+				type: "item",
+				item: "refinedstorage:controller"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				654,
+				650
+			],
+			dependency_requirement: "all_completed",
+			id: 662,
+			tasks: [{
+				id: 663,
+				type: "item",
+				item: "refinedstorage:grid"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;662],
+			dependency_requirement: "all_completed",
+			id: 664,
+			tasks: [{
+				id: 665,
+				type: "item",
+				item: "refinedstorage:crafting_grid"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;662],
+			dependency_requirement: "all_completed",
+			id: 666,
+			tasks: [{
+				id: 667,
+				type: "item",
+				item: "refinedstorage:wireless_grid"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;664],
+			dependency_requirement: "all_completed",
+			id: 668,
+			tasks: [{
+				id: 669,
+				type: "item",
+				item: "refinedstorageaddons:wireless_crafting_grid"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;662],
+			dependency_requirement: "all_completed",
+			id: 670,
+			tasks: [{
+				id: 671,
+				type: "item",
+				item: "refinedstorage:pattern_grid"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;670],
+			dependency_requirement: "all_completed",
+			id: 672,
+			tasks: [{
+				id: 673,
+				type: "item",
+				item: "refinedstorage:pattern"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;670],
+			dependency_requirement: "all_completed",
+			id: 674,
+			tasks: [{
+				id: 675,
+				type: "item",
+				item: "refinedstorage:crafter"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;674],
+			dependency_requirement: "all_completed",
+			id: 676,
+			tasks: [{
+				id: 677,
+				type: "item",
+				item: "refinedstorage:1k_storage_block"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;676],
+			dependency_requirement: "all_completed",
+			id: 678,
+			tasks: [{
+				id: 679,
+				type: "item",
+				item: "refinedstorage:4k_storage_block"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;678],
+			dependency_requirement: "all_completed",
+			id: 680,
+			tasks: [{
+				id: 681,
+				type: "item",
+				item: "refinedstorage:16k_storage_block"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;680],
+			dependency_requirement: "all_completed",
+			id: 682,
+			tasks: [{
+				id: 683,
+				type: "item",
+				item: "refinedstorage:64k_storage_block"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;658],
+			dependency_requirement: "all_completed",
+			id: 684,
+			tasks: [{
+				id: 685,
+				type: "item",
+				item: "refinedstorage:1k_storage_disk"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;684],
+			dependency_requirement: "all_completed",
+			id: 686,
+			tasks: [{
+				id: 687,
+				type: "item",
+				item: "refinedstorage:4k_storage_disk"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;686],
+			dependency_requirement: "all_completed",
+			id: 688,
+			tasks: [{
+				id: 689,
+				type: "item",
+				item: "refinedstorage:16k_storage_disk"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;688],
+			dependency_requirement: "all_completed",
+			id: 690,
+			tasks: [{
+				id: 691,
+				type: "item",
+				item: "refinedstorage:64k_storage_disk"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;645],
+			dependency_requirement: "all_completed",
+			id: 696,
+			tasks: [
+				{
+					id: 697,
+					type: "item",
+					item: "appliedenergistics2:certus_quartz_crystal"
+				},
+				{
+					id: 698,
+					type: "item",
+					item: "appliedenergistics2:charged_certus_quartz_crystal"
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;696],
+			dependency_requirement: "all_completed",
+			id: 699,
+			tasks: [{
+				id: 700,
+				type: "item",
+				item: "appliedenergistics2:charger"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;696],
+			dependency_requirement: "all_completed",
+			id: 701,
+			tasks: [{
+				id: 702,
+				type: "item",
+				item: "appliedenergistics2:sky_compass"
+			}]
+		},
+		{
+			title: "Meteor Presses",
+			icon: "appliedenergistics2:sky_stone_block",
+			x: 4.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;701],
+			dependency_requirement: "all_completed",
+			id: 703,
+			tasks: [
+				{
+					id: 704,
+					type: "item",
+					item: "appliedenergistics2:sky_stone_block"
+				},
+				{
+					id: 705,
+					type: "item",
+					item: "appliedenergistics2:calculation_processor_press"
+				},
+				{
+					id: 706,
+					type: "item",
+					item: "appliedenergistics2:engineering_processor_press"
+				},
+				{
+					id: 707,
+					type: "item",
+					item: "appliedenergistics2:logic_processor_press"
+				},
+				{
+					id: 708,
+					type: "item",
+					item: "appliedenergistics2:silicon_press"
+				}
+			]
+		},
+		{
+			x: 3.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;696],
+			dependency_requirement: "all_completed",
+			id: 709,
+			tasks: [{
+				id: 710,
+				type: "item",
+				item: "appliedenergistics2:fluix_crystal"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				703,
+				709
+			],
+			dependency_requirement: "all_completed",
+			id: 711,
+			tasks: [{
+				id: 712,
+				type: "item",
+				item: "appliedenergistics2:inscriber"
+			}]
+		},
+		{
+			title: "AE2 Processors",
+			icon: "appliedenergistics2:engineering_processor",
+			x: 5.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;711],
+			dependency_requirement: "all_completed",
+			id: 713,
+			tasks: [
+				{
+					id: 714,
+					type: "item",
+					item: "appliedenergistics2:logic_processor"
+				},
+				{
+					id: 715,
+					type: "item",
+					item: "appliedenergistics2:calculation_processor"
+				},
+				{
+					id: 716,
+					type: "item",
+					item: "appliedenergistics2:engineering_processor"
+				}
+			]
+		},
+		{
+			x: 3.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;709],
+			dependency_requirement: "all_completed",
+			id: 717,
+			tasks: [{
+				id: 718,
+				type: "item",
+				item: "appliedenergistics2:quartz_growth_accelerator"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;709],
+			dependency_requirement: "all_completed",
+			id: 719,
+			tasks: [{
+				id: 720,
+				type: "item",
+				item: "appliedenergistics2:fluix_glass_cable"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;709],
+			dependency_requirement: "all_completed",
+			id: 721,
+			tasks: [{
+				id: 722,
+				type: "item",
+				item: "appliedenergistics2:energy_acceptor"
+			}]
+		},
+		{
+			title: "Pure Crystals",
+			icon: "appliedenergistics2:purified_fluix_crystal",
+			x: 3.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;717],
+			dependency_requirement: "all_completed",
+			id: 723,
+			tasks: [
+				{
+					id: 724,
+					type: "item",
+					item: "appliedenergistics2:purified_certus_quartz_crystal"
+				},
+				{
+					id: 725,
+					type: "item",
+					item: "appliedenergistics2:purified_fluix_crystal"
+				},
+				{
+					id: 726,
+					type: "item",
+					item: "appliedenergistics2:purified_nether_quartz_crystal"
+				}
+			]
+		},
+		{
+			x: 5.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;713],
+			dependency_requirement: "all_completed",
+			id: 727,
+			tasks: [{
+				id: 728,
+				type: "item",
+				item: "appliedenergistics2:drive"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: -3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				723,
+				713
+			],
+			dependency_requirement: "all_completed",
+			id: 729,
+			tasks: [{
+				id: 730,
+				type: "item",
+				item: "appliedenergistics2:controller"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;719],
+			dependency_requirement: "all_completed",
+			id: 731,
+			tasks: [{
+				id: 732,
+				type: "item",
+				item: "appliedenergistics2:fluix_smart_cable"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;731],
+			dependency_requirement: "all_completed",
+			id: 733,
+			tasks: [{
+				id: 734,
+				type: "item",
+				item: "appliedenergistics2:fluix_smart_dense_cable"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;727],
+			dependency_requirement: "all_completed",
+			id: 735,
+			tasks: [{
+				id: 736,
+				type: "item",
+				item: {
+					id: "appliedenergistics2:1k_storage_cell",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;735],
+			dependency_requirement: "all_completed",
+			id: 737,
+			tasks: [{
+				id: 738,
+				type: "item",
+				item: {
+					id: "appliedenergistics2:4k_storage_cell",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;737],
+			dependency_requirement: "all_completed",
+			id: 739,
+			tasks: [{
+				id: 740,
+				type: "item",
+				item: {
+					id: "appliedenergistics2:16k_storage_cell",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;739],
+			dependency_requirement: "all_completed",
+			id: 741,
+			tasks: [{
+				id: 742,
+				type: "item",
+				item: {
+					id: "appliedenergistics2:64k_storage_cell",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;713],
+			dependency_requirement: "all_completed",
+			id: 743,
+			tasks: [{
+				id: 744,
+				type: "item",
+				item: "appliedenergistics2:terminal"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: -1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;743],
+			dependency_requirement: "all_completed",
+			id: 745,
+			tasks: [{
+				id: 746,
+				type: "item",
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+		},
+		{
+			icon: "appliedenergistics2:pattern_terminal",
+			x: 7.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;743],
+			dependency_requirement: "all_completed",
+			id: 747,
+			tasks: [
+				{
+					id: 748,
+					type: "item",
+					item: "appliedenergistics2:pattern_terminal"
+				},
+				{
+					id: 749,
+					type: "item",
+					item: "appliedenergistics2:blank_pattern"
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: -0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;743],
+			dependency_requirement: "all_completed",
+			id: 750,
+			tasks: [{
+				id: 751,
+				type: "item",
+				item: "appliedenergistics2:interface_terminal"
+			}]
+		},
+		{
+			title: "On-Demand Autocrafting",
+			icon: "appliedenergistics2:interface",
+			x: 6.0d,
+			y: 0.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;
+				747,
+				750
+			],
+			dependency_requirement: "all_completed",
+			id: 752,
+			tasks: [
+				{
+					id: 753,
+					type: "item",
+					item: "appliedenergistics2:interface"
+				},
+				{
+					id: 754,
+					type: "item",
+					item: "appliedenergistics2:molecular_assembler"
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;752],
+			dependency_requirement: "all_completed",
+			id: 755,
+			tasks: [{
+				id: 756,
+				type: "item",
+				item: "appliedenergistics2:1k_crafting_storage"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 2.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;755],
+			dependency_requirement: "all_completed",
+			id: 757,
+			tasks: [{
+				id: 758,
+				type: "item",
+				item: "appliedenergistics2:4k_crafting_storage"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 3.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;757],
+			dependency_requirement: "all_completed",
+			id: 759,
+			tasks: [{
+				id: 760,
+				type: "item",
+				item: "appliedenergistics2:16k_crafting_storage"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 4.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;759],
+			dependency_requirement: "all_completed",
+			id: 761,
+			tasks: [{
+				id: 762,
+				type: "item",
+				item: "appliedenergistics2:64k_crafting_storage"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: 1.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;752],
+			dependency_requirement: "all_completed",
+			id: 763,
+			tasks: [{
+				id: 764,
+				type: "item",
+				item: "appliedenergistics2:crafting_accelerator"
+			}]
+		}
+	]
+}

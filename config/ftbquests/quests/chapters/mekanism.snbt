@@ -845,6 +845,40 @@
 					item: "mekanismgenerators:advanced_solar_generator"
 				}
 			]
+		},
+		{
+			x: 1.0d,
+			y: -5.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;561],
+			dependency_requirement: "all_completed",
+			id: 692,
+			tasks: [{
+				id: 693,
+				type: "item",
+				item: "mekanism:robit"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -6.5d,
+			shape: "default",
+			subtitle: "",
+			size: 1.0d,
+			description: [],
+			min_required_dependencies: 0,
+			dependencies: [I;692],
+			dependency_requirement: "all_completed",
+			id: 694,
+			tasks: [{
+				id: 695,
+				type: "item",
+				item: "mekanism:digital_miner"
+			}]
 		}
 	]
 }
